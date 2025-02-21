@@ -1,0 +1,9 @@
+<div class="flex-header-item3">
+                <div class="marquee-text">
+                    <span class="slash">/</span> <span class="light-words"> 15% off - Use code&nbsp;&nbsp;</span> <span class="bold-words">Comfy25</span>
+                    <span class="slash">/</span><span class="light-words">Dining Tables at</span> <span class="bold-words">&nbsp;&nbsp; 199$</span>
+                    <span class="slash">/</span> <span class="bold-words">Limited Time Offer:&nbsp;&nbsp;</span><span class="light-words">throw pillows with sofas purchases</span>
+                    <span class="slash">/</span><span class="light-words">Free shipping on orders above&nbsp;&nbsp;</span><span class="bold-words">200$</span>
+                    <span class="slash">/</span>
+                </div>
+</div>
