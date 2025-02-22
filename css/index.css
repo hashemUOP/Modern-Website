@@ -17,11 +17,11 @@ body{
     margin: 0px;
 }
 .grid-container{
-    height: 1800px;
+    height: 2300px;
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 7% 20% 20% 20% 15% auto;
+    grid-template-rows: 7% 18% 20% 22% 15% auto;
     grid-template-areas: "header"
                          "images-slides"
                          "cards"
@@ -49,7 +49,7 @@ body{
     background-color: white;
     grid-area: "content1";
     justify-items: center;  
-    align-content: center;
+    align-content: flex-start;
 }
 .grid-item-content2{
     grid-area: "content2";
@@ -343,7 +343,7 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 .cards-container{
     display: flex;
     background-color: white;
-    height: 100%;
+    height: 80%;
     overflow-x: auto;
     overflow-y: hidden;
     align-items: center;
@@ -351,7 +351,7 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     scrollbar-width: none;
     gap: 25px;
     position: relative;
-    margin-top: 2%;
+    
 }
 .card-button{
     position: sticky;
@@ -485,7 +485,19 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 /*  *********  */
 
 /* content1 css */
-
+.conetent1-header{
+    display: inline-block;
+    margin: 20px 1px; 
+    white-space: nowrap;
+    line-height: 0.2;
+}
+.conetent1-header hr{
+    margin-bottom: 20px;
+}
+.conetent1-header p{
+    font-weight: bold;
+    font-size: 150%;
+}
 .content1-flex-container{
     display: flex;
     height: 50%;
@@ -549,7 +561,7 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 .content2-flex-container p{
     color: #888888;
     font-size: 150%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 .form-button-row{
     display: flex;
