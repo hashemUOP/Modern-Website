@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <title>HomePage</title>
+    <style>
+        .conetent1-header{
+            display: inline-block;
+            margin: 20px 1px; 
+            white-space: nowrap;
+            line-height: 0.2;
+        }
+        .conetent1-header hr{
+            margin-bottom: 20px;
+        }
+        .conetent1-header p{
+            font-weight: bold;
+            font-size: 150%;
+        }
+    </style>
 </head>
 <body>
     <div class="grid-container">
@@ -99,30 +114,82 @@
         <div class="grid-item-cards">
             <div class="cards-container" id="scrollContainer">
                 <div class="card" style="margin-left: 25px;">
-                    <img src="../img/spacejoy-9M66C_w_ToM-unsplash.jpg" class="background-img">
+                    <img src="../img/serene-coaster-sectional-beige-551321_20-768x614.jpg" class="background-img">
+                    <p class="card-text-top">Cloud Sectional Sofa</p>
+                    <p class="card-text-bottom">Five Stars China Factory</p>
                 </div>
                 <div class="card">
-                    <img src="../img/spacejoy-KSfe2Z4REEM-unsplash.jpg" class="background-img">
+                    <img src="../img/data_bed-with-storage_adolph-bed-with-side-storage_revised_revised_walnut_updated_new-logo_1-810x702.jpg" class="background-img">
+                    <p class="card-text-top">Compact Wooden Storage Bed</p>
+                    <p class="card-text-bottom">DKHousehold Products</p>
                 </div>
                 <div class="card">
-                    <img src="../img/spacejoy-4xRP0Ajk9ys-unsplash.jpg" class="background-img">
+                    <img src="../img/image132630.jpg" class="background-img">
+                    <p class="card-text-top">Solid Oak Dining Chair</p>
+                    <p class="card-text-bottom">Josra Ivory</p>
                 </div>
                 <div class="card">
-                    <img src="../img/r-architecture-wDDfbanbhl8-unsplash.jpg" class="background-img">
+                    <img src="../img/image119096.jpg" class="background-img">
+                    <p class="card-text-top">Oli Green Sofa</p>
+                    <p class="card-text-bottom">Timber</p>
                 </div>
                 <div class="card">
-                    <img src="../img/jason-wang-NxAwryAbtIw-unsplash.jpg" class="background-img">
+                    <img src="../img/french-linen-olive-green-hero_14.jpg" class="background-img">
+                    <p class="card-text-top">French Oli Green Bed</p>
+                    <p class="card-text-bottom">Soak&Sleep</p>
                 </div>
                 <div class="card">
-                    <img src="../img/jason-wang-NxAwryAbtIw-unsplash.jpg" class="background-img">
+                    <img src="../img/81dfKK-q0AL.jpg" class="background-img">
+                    <p class="card-text-top">GreyWood Dining Chair</p>
+                    <p class="card-text-bottom">Josra Ivory</p>
                 </div>
                 <button class="card-button" onclick="scrollRight()">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
         </div>
-        <div class="grid-item-content">
-
+        <div class="grid-item-content1">
+            <div class="conetent1-header">
+                <p>Our Services</p>
+                <hr>
+            </div>
+            <div class="content1-flex-container">
+                <div class="content1-flex-columns" id="column1">
+                    <img src="https://img.icons8.com/ios/50/truck--v1.png"alt="truck--v1"/>
+                    <p class="content1-top-text">Free shipping.</p>
+                    <p class="content1-bottom-text">on orders above $199.0.</p>
+                </div>
+                <div class="content1-flex-columns" id="column2">
+                    <img src="https://img.icons8.com/pastel-glyph/64/communication--v1.png" alt="communication--v1" />
+                    <p class="content1-top-text">24/7 Support.</p>
+                    <p class="content1-bottom-text">Live Chat Or Call.</p>
+                </div>
+                <div class="content1-flex-columns" id="column3">
+                    <img  src="https://img.icons8.com/ios/50/bank-cards--v1.png" alt="bank-cards--v1"/>
+                    <p class="content1-top-text">Online Payment.</p>
+                    <p class="content1-bottom-text">Secure Payment Services.</p>
+                </div>
+                <div class="content1-flex-columns" id="column4">
+                    <img  src="https://img.icons8.com/pastel-glyph/64/synchronize--v3.png" alt="synchronize--v3"/>
+                    <p class="content1-top-text">Easy Return.</p>
+                    <p class="content1-bottom-text">Hassle Free Shipping.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-content2">
+            <div class="content2-flex-container">
+                <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+				<form class="form-button-row">
+					<input class="input" type="email" placeholder="Enter Your Email">
+					<button><i class="fa fa-envelope"></i> Subscribe</button>
+				</form>
+				<div class="content2-social">
+					<a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="https://instagra.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+            </div>
         </div>
         <div class="grid-item-footer">
             <div class="footer-container">
@@ -130,10 +197,10 @@
                     <p class="header">Urban D&eacute;n</p>
                     <p style="all:unset;color: #636579;font-size: 85%;">Style That Speaks, Comfort That Lasts.</p>
                     <div class="footer-social">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-youtube"></i>
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagra.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-columns">
@@ -149,7 +216,9 @@
                 </div>
                 <div class="footer-columns">
                     <p class="header">Services</p>
-                    <p>Log In and Sign Up</p>
+                    <a href="../html/login.htm">
+                        <p>Log In and Sign Up</p>
+                    </a>
                     <p>payment</p>
                 </div>
                 <div class="footer-columns">
