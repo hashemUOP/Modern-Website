@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <title>HomePage</title>
-    <style>
-        .conetent1-header{
-            display: inline-block;
-            margin: 20px 1px; 
-            white-space: nowrap;
-            line-height: 0.2;
-        }
-        .conetent1-header hr{
-            margin-bottom: 20px;
-        }
-        .conetent1-header p{
-            font-weight: bold;
-            font-size: 150%;
-        }
-    </style>
 </head>
 <body>
     <div class="grid-container">
@@ -27,23 +11,51 @@
             <div class="flex-header-item1">
                 <div class="header-row1">
                     <div class="word-plus-arrow">
-                        <span>Home</span>
-                        <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                        <div class="menu">
+                            <span>Home</span>
+                            <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" width="15px">
+                            <ul class="dropdown">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="word-plus-arrow">
-                        <span>New Arrivals</span>
-                        <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                        <div class="menu">
+                           <span>New Arrivals</span>
+                            <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                            <ul class="dropdown">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="word-plus-arrow">
-                        <span>Collections</span>
-                        <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                        <div class="menu">
+                            <span>Collections</span>
+                            <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                            <ul class="dropdown">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                </ul> 
+                        </div>
                     </div>
                     <div class="word-plus-arrow">
-                        <span>Resources</span>
-                        <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                        <div class="menu">
+                           <span>Resources</span>
+                            <img src="../icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg" height="15px">
+                            <ul class="dropdown">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul> 
+                        </div>
                     </div>
                 </div>
-                <div class="header-row2">
+                <div class="header-row2" onclick="redirect('../html/index.htm')">
                     <span>Urban D&eacute;n</span>
                 </div>
                 <div class="header-row3">
@@ -51,28 +63,30 @@
                 </div>
                 <div class="header-row4">
                     <a href="../html/login.htm">
-                    <button class="login-button">Login</button>    
+                        <button class="login-button">Login</button>    
                     </a>
-                    <button class="signup-button">Sign up</button>
+                    <a href="#">
+                        <button class="signup-button">Sign up</button>
+                    </a>
                 </div>
             </div>
             <div class="flex-header-item2">
                 <div class="header-item2-row1">
-                    <span class="instagram">Instagram</span>
-                    <span class="facebook">Facebook</span>
-                    <span class="pintrest">Pinterest</span>
+                    <span class="instagram"><a href="https://instagram.com">Instagram</a></span>
+                    <span class="facebook"><a href="https://facebook.com" >Facebook</a></span>
+                    <span class="pintrest"><a href="https://pinterest.com">Pinterest</a></span>
                 </div>
                 <div class="header-item2-row2">
-                    <span>Snap Deal</span>
+                    <span><a href="#">Deal</a></span>
                     <span>.</span>
-                    <span>Find Store</span>
+                    <span><a href="#">Find Store</a></span>
                     <span>.</span>
-                    <span>Upcoming Events</span>
+                    <span><a href="#">Upcoming Events</a></span>
                     <span>.</span>
-                    <span>FAQs</span>
+                    <span><a href="#">FAQs</a></span>
                 </div>
                 <div class="header-item2-row3">
-                    <button class="cart-button">
+                    <button class="cart-button" onclick="redirect('#')">
                         <img src="..\img\basket (3).png" height="15px">&nbsp;0 items in cart
                     </button>
                 </div>
@@ -101,8 +115,8 @@
                         </div>
                         
                         <div class="buttons">
-                            <button class="button-shop">Shop Now</button>
-                            <button class="button-view">View All</button>
+                            <button class="button-shop"onclick="redirect('#')">Shop Now</button>
+                            <button class="button-view"onclick="redirect('#')">View All</button>
                         </div>
                     </div>
         
@@ -181,7 +195,9 @@
                 <p>Sign Up for the <strong>NEWSLETTER</strong></p>
 				<form class="form-button-row">
 					<input class="input" type="email" placeholder="Enter Your Email">
-					<button><i class="fa fa-envelope"></i> Subscribe</button>
+					<button onclick="redirect('#')" style="cursor: pointer;">
+                        <i class="fa fa-envelope"></i> Subscribe
+                    </button>
 				</form>
 				<div class="content2-social">
 					<a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
@@ -205,26 +221,26 @@
                 </div>
                 <div class="footer-columns">
                     <p class="header">Products</p>
-                    <p>Overview</p>
-                    <p>Customer stories</p>
+                    <p onclick="redirect('#')">Overview</p>
+                    <p onclick="redirect('#')">Customer stories</p>
                 </div>
                 <div class="footer-columns">
                     <p class="header">Resources</p>
-                    <p>Blog</p>
-                    <p>What's new</p>
-                    <p>Help Center</p>
+                    <p onclick="redirect('#')">Blog</p>
+                    <p onclick="redirect('#')">What's new</p>
+                    <p onclick="redirect('#')">Help Center</p>
                 </div>
                 <div class="footer-columns">
                     <p class="header">Services</p>
                     <a href="../html/login.htm">
                         <p>Log In and Sign Up</p>
                     </a>
-                    <p>payment</p>
+                    <p onclick="redirect('#')">payment</p>
                 </div>
                 <div class="footer-columns">
                     <p class="header">Company</span>
-                    <p>About us</p>
-                    <p>Contact support</p>
+                    <p onclick="redirect('#')">About us</p>
+                    <p onclick="redirect('#')">Contact support</p>
                 </div>
             </div>
             <hr>

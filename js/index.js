@@ -4,3 +4,6 @@ function scrollRight() {
         behavior: 'smooth' 
     });
 }
+function redirect(ref){
+    window.location.href= ref;
+}

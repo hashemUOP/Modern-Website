@@ -91,16 +91,50 @@ body{
     border-bottom:#929fa3 ;
     
 }
+.menu {
+    display: flex;
+    align-items: center;  
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    flex-direction: column;  
+    position: absolute;      
+    top: 100%;               
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0.5em 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 100;           
+  }
+  .dropdown li {
+    padding: 0.5em 1em;
+    white-space: nowrap;
+  }
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  .menu:hover .dropdown {
+    display: flex;
+  }
 .header-row1{
-    display: inline-flex; 
+    display: flex; 
     justify-content: space-evenly;
-    width: 40%;
+    min-width: 40%;
+    flex: 1;
     height: 100%;
     background-color: white;
     align-items: flex-start; 
     align-items: center;
     font-size: 80%;
     color: rgb(80, 80, 80);
+    flex-wrap: wrap;
+    justify-items: center;
 }
 .header-row2{
     display:inline-flex;
@@ -112,6 +146,7 @@ body{
     width: 20%;
     font-weight: bold;
     font-size: 90%;
+    cursor: pointer;
 }
 .header-row3{
     display:flex;
@@ -128,7 +163,11 @@ body{
     justify-content: flex-start;
     align-items: center;
     height: 100%; 
-    width: 20%;
+    min-width: 20%;
+    justify-items: center;
+    flex: 2;
+    gap: 2px;
+    flex-wrap: wrap;
     background-color: white;
 }
 .login-button{
@@ -137,8 +176,9 @@ body{
     border-radius: 25px;
     padding: 10px 30px;
     color: black;
-    margin-left: 10px;
     cursor: pointer;
+    margin-left: 10px;
+    font-size: 75%;
 }
 .signup-button{
     background-color: black;
@@ -146,30 +186,49 @@ body{
     border: none;
     border-radius: 25px;
     padding: 10px 30px;
-    margin-left: 5px;
     cursor: pointer;
+    font-size: 75%;
+}
+.header-item2-row1 span{
+    cursor: pointer;
+}
+.header-item2-row1 span a{
+    all: unset;
 }
 .header-item2-row1{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width:  calc(100% / 3);
+    min-width:  calc(100% / 3);
     height: 100%;
     font-size: 80%;
+    flex-wrap: wrap;
+    justify-items: center;
+    flex: 1;
 }
 .header-item2-row2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:  calc(100% / 3);
+    min-width:  calc(100% / 3);
     height: 100%;
     font-size: 80%;
+    flex-wrap: wrap;
+    justify-items: center;
+    flex: 1;
+}
+.header-item2-row2 span a{
+    all: unset;
+    cursor: pointer;
 }
 .header-item2-row3{
     display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    flex: 1;
     justify-content: flex-end;
     align-items: center;
-    width:  calc(100% / 3);
+    min-width:  calc(100% / 3);
     height: 100%;
 }
 .cart-button{
@@ -177,7 +236,7 @@ body{
     color: white;
     border: none;
     border-radius: 25px;
-    padding: 5px 30px;
+    padding: 2% 30px;
     margin-left: 5px;
     display: inline-flex;
     align-items: center;
@@ -185,6 +244,7 @@ body{
     font-size: 70%;
     margin-bottom:5px;
     margin-top: 5px;
+    cursor: pointer;
 }
 .instagram{
     margin-right: 5%;
@@ -331,9 +391,10 @@ width: 40px;
 box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 .word-plus-arrow{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .word-plus-arrow img{
     margin-left: 5px;
