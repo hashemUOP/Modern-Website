@@ -671,29 +671,30 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         display: block; /* Show the mobile version */
       }
       .grid-container-mobile{
+        height: 1500px;
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-        align-content: flex-start;              
+        grid-template-rows: 7% 13% 20% 20% 20% 20%; 
+        align-content: flex-start;       
+        background-color: #12131a;       
     }
     .grid-item-header-mob{
-        background-color: #C13584;
+        background-color: white;
         display: flex;
         flex-direction: column;
     }
     .flex-header-item3 {
-        height:30%;
+        height:40%;
         width: 100%;
         display: flex;
-        background-color: #f7f7f7;
+        background-color: black;
+        color: white;
         align-items: center;
         overflow: hidden;
         white-space: nowrap;
         position: relative;
         border-bottom:#929fa3 ;
-        align-content: center;
-        justify-content: center;
         
     }
     .marquee-text {
