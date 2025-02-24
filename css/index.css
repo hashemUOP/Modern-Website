@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 *{
     text-align: center;
     text-overflow: ellipsis;
@@ -26,10 +27,8 @@ body{
                          "images-slides"
                          "cards"
                          "content1"
-                         "content1"
-                         "footer"                
-    
-    
+                         "content2"
+                         "footer"                 
 }
 .grid-item-header{
     background-color: white;
@@ -656,4 +655,50 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     color: #636579;
     margin: 30px 20px;
 }
+#desktop {
+    display: block;/* Show the desktop version */
+  }
+  
+  #mobile {
+    display: none; /* hide the  mobile version */
+  }
 /* ************ */
+@media (max-width:783px){
+    #desktop {
+        display: none;  /* hide the desktop version */
+      }
+      #mobile {
+        display: block; /* Show the mobile version */
+      }
+      .grid-container-mobile{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        align-content: flex-start;              
+    }
+    .grid-item-header-mob{
+        background-color: #C13584;
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-header-item3 {
+        height:30%;
+        width: 100%;
+        display: flex;
+        background-color: #f7f7f7;
+        align-items: center;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        border-bottom:#929fa3 ;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .marquee-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 20s linear infinite;
+    }
+}

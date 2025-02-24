@@ -7,3 +7,6 @@ function scrollRight() {
 function redirect(ref){
     window.location.href= ref;
 }
+
+function displaySmallScreenHTML(){
+}
