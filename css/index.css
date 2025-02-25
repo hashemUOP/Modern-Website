@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Touche';
-    src: url('../fonts/Touche-Regular-BF642a2ebfe9ff0.otf') format('truetype');
+    src: url('../fonts/Touche-Light-BF642a2ebf8fe16.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -675,14 +675,45 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 7% 13% 20% 20% 20% 20%; 
+        grid-template-rows: 7% 35%  20% 20% auto; 
         align-content: flex-start;       
-        background-color: #12131a;       
+        background-color: white;       
     }
-    .grid-item-header-mob{
+    .grid-item-header{
         background-color: white;
         display: flex;
         flex-direction: column;
+    }
+    .grid-item-images{
+        position: relative;
+    }
+    .images-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .images-col{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        color: white;
+        top:50px;
+    }
+    .images-col button{
+        width: 25%;
+        margin-top: 20px;
+        padding: 10px;
+        align-self: center;
+        font-weight: bold;
+        border-radius: 35px;
+        cursor: pointer;
+    }
+    .images-col p{
+        font-weight: lighter;
+        font-size: 11px; 
+        margin: 0px 120px;
     }
     .flex-header-item3 {
         height:40%;
@@ -695,11 +726,11 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         white-space: nowrap;
         position: relative;
         border-bottom:#929fa3 ;
-        
     }
     .marquee-text {
         display: inline-block;
         padding-left: 100%;
         animation: marquee 20s linear infinite;
     }
+    
 }
