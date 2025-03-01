@@ -1,0 +1,1 @@
+Components tied to specific routes/views (if using React Router).
