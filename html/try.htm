@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Screen Width</title>
+  <style>
+    /* The pseudo-element displays the data-width attribute value */
+    body::before {
+      content: attr(data-width);
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 8px;
+      border-radius: 4px;
+      font-family: sans-serif;
+      font-size: 14px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body data-width="">
+  <script>
+    // Function to update the data-width attribute with the current window width
+    function updateScreenWidth() {
+      document.body.setAttribute('data-width', `Screen Width: ${window.innerWidth}px`);
+    }
+    // Update on load and whenever the window is resized
+    window.addEventListener('resize', updateScreenWidth);
+    updateScreenWidth();
+  </script>
+</body>
+</html>

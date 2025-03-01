@@ -1,0 +1,207 @@
+*{
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.text-div{
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+body{
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.grid-container{
+    height: 90vh;
+    width: 90dvw;
+    background-color: #e9e9e9;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 5vh;
+}
+.grid-item1{
+    background-color: #e9e9e9;  
+    border-radius: 15px 0px 0px 15px;/* top-left | top-right | bottom-right | bottom-left */
+}
+.grid-item1-img{
+    width: 100%; height: 100%; border-radius:15px 0px 0px 15px;
+}
+.grid-item2{
+    background-color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    height: 100%;
+    width: 80%;
+    border-radius: 15px;
+}
+form{
+    width: 80%;
+    margin-bottom: 4%;
+}
+.input-form{
+    display: block;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 12%;
+    padding-left: 6%;
+    margin-top: 10px;
+    width: 80%;
+    border:none;
+    border-bottom: 2px solid black;
+    text-align: start;
+}
+.forget-text{
+    color: rgb(166, 166, 166);
+    font-size: 80%;
+    font-weight: 400;
+}
+.remember-text{
+    color: black;
+    font-size: 80%;
+    font-weight: 500;
+}
+.forget-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 0%;
+    width: 100%;
+    font-size: 90%;
+    margin-bottom: 7%;
+    gap: 8%;
+}
+.buttons-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+.login-button{
+    width: 70%;
+    height: 27%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 5% 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.google-button{
+    color: gray;
+    height: 27%;
+    width: 70%;
+    border-radius: 50px;
+    font-size: 80%;
+    border: none;
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row-span{
+    width: 100%; 
+    height: 80%;
+    margin-bottom: 5%;
+}
+.span1{
+    color: rgb(43, 43, 43); 
+    font-size: 80%;
+    font-weight: 400;
+}
+.span2{
+    font-size: 90%; 
+    margin-bottom: 10%;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+@media(max-width: 650px){
+    .grid-container{
+    height: 90vh;
+    width: 90dvw;
+    background-color: #e9e9e9;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    border-radius: 15px;
+    height: fit-content;
+    }
+    .grid-item1{
+        width: 0px;
+        height: 0px;
+    }
+    .grid-item2{
+        margin: 10% 5%;
+        border-radius: 15px;
+    }
+    .login-button{
+    width: 70%;
+    height: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+.forget-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 0%;
+    width: 100%;
+    font-size: 90%;
+    margin-bottom: 3%;
+    gap: 8%;
+}
+.buttons-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    gap: 30%;
+    margin-bottom: 10%;
+}
+.login-button{
+    width: 70%;
+    height: 60%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 2% 0%;
+}
+.google-button{
+    color: gray;
+    height: 60%;
+    width: 70%;
+    border-radius: 50px;
+    font-size: 70%;
+    border: none;
+    padding: 2% 0%;
+}
+.row-span{
+    width: 100%; 
+    height: 80%;
+    margin-bottom: 5%;
+}
+}
