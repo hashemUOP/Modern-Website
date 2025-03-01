@@ -1,0 +1,35 @@
+html files that holds the <div id ="root"></div> are placed here in the public folder but the jsx,css,js and other are in 
+the src folder.
+In a typical Create React App setup:
+
+Public Folder: Contains static files like index.html—which acts as the base HTML template—and assets that don't need to be processed by webpack.
+Src Folder: Holds your JavaScript and JSX files where you write your React components and application logic.
+The index.html in the public folder includes a <div id="root"></div> where your React app (from the src folder) gets rendered.
+
+
+what does the public folder in react projects do?
+In a React project—especially those created with Create React App—the public folder is used to store static assets that are served as-is without any processing by webpack. Here's a breakdown of its purpose:
+
+Entry Point:
+The public/index.html file is the main HTML file where your React application gets mounted (usually into a <div id="root"></div>).
+
+Static Assets:
+Files such as images, icons (like favicon.ico), and manifest files (like manifest.json) that don’t need to be bundled or processed by webpack can be placed here. They remain unchanged during the build process.
+
+Direct References:
+Assets in the public folder can be referenced by their relative URL. For example, if you have an image at public/logo.png, you can reference it directly in your code:
+
+
+<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+This ensures that the asset is correctly referenced regardless of your app’s build configuration.
+
+Unprocessed Content:
+Unlike files in the src folder, files in the public folder are not transformed or bundled by webpack. This is ideal for content that doesn’t require any dynamic processing.
+
+In summary, the public folder is essential for hosting the base HTML file and any static assets your app requires, ensuring they’re readily available when your app is served.
+
+
+
+
+
+
