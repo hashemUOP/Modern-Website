@@ -41,7 +41,7 @@ function Footer(){
                 </div>
                 <div className="footer-columns">
                     <p className="header">Services</p>
-                    <a href="../html/login.htm">
+                    <a href="../html/login.htm" style={{all:"unset"}}>
                         <p>Log In and Sign Up</p>
                     </a>
                     <p onClick={()=>redirect("#")}>payment</p>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Touche';
+    src: url('../assets/fonts/Touche-Light-BF642a2ebf8fe16.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: 'Touche',"Helvetica",  Arial, sans-serif;
+  }
+  body{
+    margin: 0px;
+  }

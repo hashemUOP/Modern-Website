@@ -1,24 +1,10 @@
-@font-face {
-  font-family: 'Touche';
-  src: url('../assets/fonts/Touche-Light-BF642a2ebf8fe16.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-*{
-  text-align: center;
-  text-overflow: ellipsis;
-  font-family: 'Touche',"Helvetica",  Arial, sans-serif;
-}
 a{
   text-decoration: none;
 }
-    
-body{
-  margin: 0px;
-}
+  
 .grid-container{
-  height: 2200px;
+  height: 2300px;
+  gap: 20px;
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -42,8 +28,6 @@ body{
 }
 .grid-item-cards{
   grid-area: "cards";
-  height: 90%;
-
 }
 .grid-item-content1{
   background-color: white;
@@ -408,7 +392,7 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 .cards-container {
   display: flex;
   background-color: white;
-  height: 100%;  
+  height: 70%;  
   overflow-x: auto;
   overflow-y: hidden;
   align-items: stretch;  
@@ -423,12 +407,11 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 .card {
   flex: 0 0 auto;  
   width: 300px;
-  height: 90%;  
+  height: 70%;  
   border-radius: 35px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
-  margin-top: 2%;
   transition: filter 0.3s ease-in-out; 
   cursor: pointer;
 }
@@ -439,7 +422,7 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 35px;
+  border-radius: inherit;
 }
 
 .card-text-top,
@@ -728,14 +711,20 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
       font-weight: bold; 
       padding: 0px 8%;
     } 
-    
+    .form-button-row button{
+      width: 15%;
+      font-size: 12px;
+    }
+    .form-button-row input{
+      font-size: 12px;
+    }
 }
 
 /* ************************************ */
 
 
 /* *****     mobile css code    ******* */
-@media (max-width:782px){
+@media (max-width:783px){
   #desktop {
       display: none;  /* hide the desktop version */
     }

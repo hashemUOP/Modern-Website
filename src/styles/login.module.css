@@ -1,0 +1,226 @@
+/* login.module.css */
+.textDiv {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.gridContainerLogin {
+    height: 90vh;
+    width: 90dvw;
+    background-color: #e9e9e9;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 5vh;
+}
+
+.gridItem1 {
+    background-color: #e9e9e9;  
+    border-radius: 15px 0px 0px 15px; /* top-left | top-right | bottom-right | bottom-left */
+}
+
+.gridItem1Img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.gridItem2 {
+    background-color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    height: 100%;
+    width: 80%;
+    border-radius: 15px;
+}
+
+form {
+    width: 80%;
+    margin-bottom: 4%;
+}
+
+.inputForm {
+    display: block;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 12%;
+    padding-left: 6%;
+    margin-top: 10px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: start;
+}
+
+.forgetText {
+    color: rgb(166, 166, 166);
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.rememberText {
+    color: black;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.forgetRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 0%;
+    width: 100%;
+    font-size: 90%;
+    margin-bottom: 7%;
+    gap: 8%;
+}
+
+.buttonsColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+
+.loginButton {
+    width: 70%;
+    height: 27%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 5% 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleButton {
+    color: gray;
+    height: 27%;
+    width: 70%;
+    border-radius: 50px;
+    font-size: 80%;
+    border: none;
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowSpan {
+    width: 100%; 
+    height: 80%;
+    margin-bottom: 5%;
+}
+
+.span1 {
+    color: rgb(43, 43, 43); 
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.span2 {
+    font-size: 90%; 
+    margin-bottom: 10%;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+
+@media(max-width: 650px) {
+    .gridContainerLogin {
+        height: 90vh;
+        width: 90dvw;
+        background-color: #e9e9e9;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        border-radius: 15px;
+        height: fit-content;
+    }
+
+    .gridItem1 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .gridItem2 {
+        margin: 10% 5%;
+        border-radius: 15px;
+    }
+
+    .loginButton {
+        width: 70%;
+        height: 50%;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+    }
+
+    .forgetRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin-top: 0%;
+        width: 100%;
+        font-size: 90%;
+        margin-bottom: 3%;
+        gap: 8%;
+    }
+
+    .buttonsColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        gap: 30%;
+        margin-bottom: 10%;
+    }
+
+    .loginButton {
+        width: 70%;
+        height: 60%;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        padding: 2% 0%;
+    }
+
+    .googleButton {
+        color: gray;
+        height: 60%;
+        width: 70%;
+        border-radius: 50px;
+        font-size: 70%;
+        border: none;
+        padding: 2% 0%;
+    }
+
+    .rowSpan {
+        width: 100%; 
+        height: 80%;
+        margin-bottom: 5%;
+    }
+}

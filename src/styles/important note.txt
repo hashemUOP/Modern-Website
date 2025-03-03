@@ -1,0 +1,16 @@
+in react there is two types of css files
+
+*note body{} and *{} are global for all project components
+
+1. global css files (normal css files)
+a css file that has extension file-name.css 
+this css file applys css cascading to all css classes in all components in project that has the same name.
+
+2. module css file:
+a css file with extension file-name.module.css
+this css file applys css cascading only to one component in project even they had repeated names.
+
+* important note classes names use camel case naming convention.
+
+
+why always css module? because it prevents css clash between all components in project.
