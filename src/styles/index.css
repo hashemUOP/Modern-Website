@@ -42,6 +42,7 @@ body{
 }
 .grid-item-cards{
   grid-area: "cards";
+  height: 90%;
 
 }
 .grid-item-content1{
@@ -399,78 +400,83 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 /* card css  */
 
-.cards-container{
+.grid-item-cards {
+  grid-area: cards;
+  overflow: hidden; /* prevent content from overflowing the grid cell */
+}
+
+.cards-container {
   display: flex;
   background-color: white;
-  height: 80%;
+  height: 100%;  
   overflow-x: auto;
   overflow-y: hidden;
-  align-items: center;
-  /* Hide scrollbar in Firefox */
-  scrollbar-width: none;
+  align-items: stretch;  
   gap: 25px;
   position: relative;
-  
+  -ms-overflow-style: none;  /* hide scroll bar for edge */
+  scrollbar-width: none;     /* hide for firefox */
 }
-.card-button{
-  position: sticky;
-  top:50%;
-  right:30px;
-  height: 40px;
-  padding: 15px;
-  width: 70px;
-  background-color: black;
-  border-radius: 15px;
-  color: white;
-  border: none;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+.cards-container::-webkit-scrollbar {
+  display: none;             /* hide for rest of browsers*/
+}
+.card {
+  flex: 0 0 auto;  
+  width: 300px;
+  height: 90%;  
+  border-radius: 35px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  margin-top: 2%;
+  transition: filter 0.3s ease-in-out; 
   cursor: pointer;
 }
-.cards-container ::-webkit-scrollbar{
-  width:0;
-   /* Hide scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge */
-  display: none; /* Chrome, Safari, Edge */
+.card:hover {
+  filter: brightness(1.1); 
 }
-.card{
-  height: 75%;
-  min-width: 300px;
-  line-height: 120px;
-  border-radius: 35px;
-  box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.3);
-}
-.card img{
-  object-fit: cover;
+.card img {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 35px;
-  position: relative;
-  image-rendering: crisp-edges; /* For Chrome & Edge */ 
-  image-rendering: -webkit-optimize-contrast; /* Safari */
-  image-rendering: pixelated; /* For pixelated images */
 }
-.card-text-top{
-  position: sticky; 
-  bottom: 20%;
-  height: 25%;
-  width: 100%;
-  font-size: 110%;
+
+.card-text-top,
+.card-text-bottom {
+  position: absolute;
+  left: 15px;
+  width: calc(100% - 30px); 
   color: white;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); 
-  text-align: left;
-  margin-left:15px ;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
-.card-text-bottom{
-  position: sticky; 
+
+.card-text-top {
+  bottom: 40%;
+  font-size: 1.1rem;
+}
+.card-text-bottom {
   bottom: 15%;
-  height: 25%;
-  width: 100%;
-  font-size: 90%;
-  color: white;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); 
-  text-align: left;
-  margin-left:15px ;
+  font-size: 0.9rem;
 }
+.arrow-button {
+  background-color: black;
+  border: white;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 100%;
+  text-align: center;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 45%;
+  right: 20px;
+  }
 /*  *********  */
 
 /* footer css  */

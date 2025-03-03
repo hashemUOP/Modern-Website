@@ -41,7 +41,7 @@ function IndexCards() {
                         <p className="card-text-bottom">{card.text2}</p>
                     </div>
                 ))}
-                <button className="card-button" onClick={scrollRight}>
+                <button className="arrow-button" onClick={scrollRight}>
                     <i className="fa fa-arrow-right"></i>
                 </button>
             </div>

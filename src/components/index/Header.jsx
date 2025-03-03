@@ -3,6 +3,7 @@ import cartIcon from '../../assets/img/basket (3).png';
 import arrowDown from '../../assets/icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg';
 import Drawer from "./Drawer.jsx";
 
+
 function redirect(ref){
     window.location.href= ref;
 }
@@ -131,4 +132,6 @@ function HeaderMobile(){
             </div>
             );
 }
+
+
 export {Header,HeaderMobile};
