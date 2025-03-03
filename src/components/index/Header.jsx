@@ -20,7 +20,6 @@ function Marquee(){
 }
 function Header(){
     return (
-    <div className="grid-container">
         <div className="grid-item-header">
             <div className="flex-header-item1">
                 <div className="header-row1">
@@ -108,7 +107,6 @@ function Header(){
             <div className="flex-header-item3">
                 <Marquee/>   
             </div>
-        </div>
         </div>
     );
 }

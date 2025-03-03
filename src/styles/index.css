@@ -18,7 +18,7 @@ body{
   margin: 0px;
 }
 .grid-container{
-  height: 2300px;
+  height: 2200px;
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -163,8 +163,7 @@ body{
   align-items: center;
   height: 100%; 
   min-width: 20%;
-  justify-items: center;
-  flex: 2;
+  justify-items: auto;
   gap: 2px;
   flex-wrap: wrap;
   background-color: white;
