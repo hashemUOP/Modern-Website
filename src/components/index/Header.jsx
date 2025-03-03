@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import cartIcon from '../../assets/img/basket (3).png';
 import arrowDown from '../../assets/icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg';
 import Drawer from "./Drawer.jsx";
@@ -112,26 +112,43 @@ function Header(){
     );
 }
 
-function HeaderMobile(){
-    return (
-            <div className="grid-item-header">
-                <div className="flex-header-item3">
-                    <Marquee/>
-                </div>
-                <div style={{ display: "flex", height: "60%", width: "100%", alignItems: "center", justifyContent: "space-between" }}>
-                    <div style={{marginLeft:"5%"}}>
-                        <i className="fa-solid fa-bars" onClick={()=><Drawer/>} style={{cursor:"pointer"}}></i>
-                        <i className="fa-solid fa-magnifying-glass" style={{marginLeft: "20px"}}></i>
-                    </div>
-                    <span style={{fontWeight: "bold"}}>Urban D&eacute;n</span>  
-                    <div  style={{marginRight: "5%",justifyContent: "space-between"}}>
-                       <i className="fa-regular fa-user"style={{marginRight: "20px"}}></i>
-                        <i className="fa-solid fa-bag-shopping"></i>  
-                    </div>
-                </div>
-            </div>
-            );
+
+function HeaderMobile() {
+  const [showDrawer, setShowDrawer] = useState(false);
+
+  return (
+    <div className="grid-item-header">
+      <div className="flex-header-item3">
+        <Marquee/>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          height: "60%",
+          width: "100%",
+          alignItems: "center",
+          justifyContent: "space-between"
+        }}
+      >
+        <div style={{ marginLeft:"5%" }}>
+          <i
+            className="fa-solid fa-bars"
+            onClick={() => setShowDrawer(true)}
+            style={{ cursor:"pointer" }}
+          ></i>
+          <i className="fa-solid fa-magnifying-glass" style={{ marginLeft: "20px" }}></i>
+        </div>
+        <span style={{ fontWeight: "bold" }}>Urban D&eacute;n</span>  
+        <div style={{ marginRight: "5%", justifyContent: "space-between" }}>
+          <i className="fa-regular fa-user" style={{ marginRight: "20px" }}></i>
+          <i className="fa-solid fa-bag-shopping"></i>  
+        </div>
+      </div>
+      {showDrawer && <Drawer onClose={() => setShowDrawer(false)} />}
+    </div>
+  );
 }
+
 
 
 export {Header,HeaderMobile};

@@ -715,6 +715,20 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
       margin-right: 5%;
       margin-left: 10%;
     }
+    .bold-words{
+      font-weight: bold; 
+      font-size: 80%;
+    }
+    .light-words{
+      font-weight: 400;
+      font-size: 80%;
+    }
+    .slash{
+      font-size: 100%;
+      font-weight: bold; 
+      padding: 0px 8%;
+    } 
+    
 }
 
 /* ************************************ */
@@ -789,11 +803,12 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   .images-col button{
       width: 25%;
       margin-top: 20px;
-      padding: 10px;
+      padding: 5px;
       align-self: center;
       font-weight: bold;
       border-radius: 35px;
       cursor: pointer;
+      font-size: 12px;
   }
   .images-col p{
       font-weight: lighter;
