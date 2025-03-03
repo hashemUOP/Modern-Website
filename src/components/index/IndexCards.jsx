@@ -6,6 +6,7 @@ import cardImage3 from "../../assets/img/image132630.jpg";
 import cardImage4 from "../../assets/img/image119096.jpg";
 import cardImage5 from "../../assets/img/french-linen-olive-green-hero_14.jpg";
 import cardImage6 from "../../assets/img/81dfKK-q0AL.jpg";
+import styles from "../../styles/index.module.css";
 
 const cardsInfo = [
     { text1: "Cloud Sectional Sofa", text2: "Five Stars China Factory", img: cardImage1 },
@@ -25,23 +26,23 @@ function scrollRight() {
 
 function IndexCards() {
     return (
-        <div className="grid-item-cards">
-            <div className="cards-container" id="scrollContainer">
+        <div className={styles.gridItemCards}>
+            <div className={styles.cardsContainer} id="scrollContainer">
                 {cardsInfo.map((card, index) => (
-                    index === 0?
-                    <div className="card" style={{ marginLeft: "25px" }} key={index}>
-                        <img src={card.img} className="background-img" alt={card.text1} />
-                        <p className="card-text-top">{card.text1}</p>
-                        <p className="card-text-bottom">{card.text2}</p>
+                    index === 0 ?
+                    <div className={styles.card} style={{ marginLeft: "25px" }} key={index}>
+                        <img src={card.img} className={styles.backgroundImg} alt={card.text1} />
+                        <p className={styles.cardTextTop}>{card.text1}</p>
+                        <p className={styles.cardTextBottom}>{card.text2}</p>
                     </div>
                     :
-                    <div className="card" key={index}>
-                        <img src={card.img} className="background-img" alt={card.text1} />
-                        <p className="card-text-top">{card.text1}</p>
-                        <p className="card-text-bottom">{card.text2}</p>
+                    <div className={styles.card} key={index}>
+                        <img src={card.img} className={styles.backgroundImg} alt={card.text1} />
+                        <p className={styles.cardTextTop}>{card.text1}</p>
+                        <p className={styles.cardTextBottom}>{card.text2}</p>
                     </div>
                 ))}
-                <button className="arrow-button" onClick={scrollRight}>
+                <button className={styles.arrowButton} onClick={scrollRight}>
                     <i className="fa fa-arrow-right"></i>
                 </button>
             </div>

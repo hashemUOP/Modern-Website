@@ -1,37 +1,36 @@
 import React from "react";
-
+import styles from "../../styles/index.module.css";
 
 function IndexContent1(){
     return (
-            <div className="grid-item-content1">
-                <div className="conetent1-header">
-                    <p>Our Services</p>
-                    <hr/>
+        <div className={styles.gridItemContent1}>
+            <div className={styles.conetent1Header}>
+                <p>Our Services</p>
+                <hr/>
+            </div>
+            <div className={styles.content1FlexContainer}>
+                <div className={styles.content1FlexColumns} id="column1">
+                    <img src="https://img.icons8.com/ios/50/truck--v1.png" alt="truck--v1"/>
+                    <p className={styles.content1TopText}>Free shipping.</p>
+                    <p className={styles.content1BottomText}>on orders above $199.0.</p>
                 </div>
-                <div className="content1-flex-container">
-                    <div className="content1-flex-columns" id="column1">
-                        <img src="https://img.icons8.com/ios/50/truck--v1.png"alt="truck--v1"/>
-                        <p className="content1-top-text">Free shipping.</p>
-                        <p className="content1-bottom-text">on orders above $199.0.</p>
-                    </div>
-                    <div className="content1-flex-columns" id="column2">
-                        <img src="https://img.icons8.com/pastel-glyph/64/communication--v1.png" alt="communication--v1" />
-                        <p className="content1-top-text">24/7 Support.</p>
-                        <p className="content1-bottom-text">Live Chat Or Call.</p>
-                    </div>
-                    <div className="content1-flex-columns" id="column3">
-                        <img  src="https://img.icons8.com/ios/50/bank-cards--v1.png" alt="bank-cards--v1"/>
-                        <p className="content1-top-text">Online Payment.</p>
-                        <p className="content1-bottom-text">Secure Payment Services.</p>
-                    </div>
-                    <div className="content1-flex-columns" id="column4">
-                        <img  src="https://img.icons8.com/pastel-glyph/64/synchronize--v3.png" alt="synchronize--v3"/>
-                        <p className="content1-top-text">Easy Return.</p>
-                        <p className="content1-bottom-text">Hassle Free Shipping.</p>
-                    </div>
+                <div className={styles.content1FlexColumns} id="column2">
+                    <img src="https://img.icons8.com/pastel-glyph/64/communication--v1.png" alt="communication--v1" />
+                    <p className={styles.content1TopText}>24/7 Support.</p>
+                    <p className={styles.content1BottomText}>Live Chat Or Call.</p>
+                </div>
+                <div className={styles.content1FlexColumns} id="column3">
+                    <img src="https://img.icons8.com/ios/50/bank-cards--v1.png" alt="bank-cards--v1"/>
+                    <p className={styles.content1TopText}>Online Payment.</p>
+                    <p className={styles.content1BottomText}>Secure Payment Services.</p>
+                </div>
+                <div className={styles.content1FlexColumns} id="column4">
+                    <img src="https://img.icons8.com/pastel-glyph/64/synchronize--v3.png" alt="synchronize--v3"/>
+                    <p className={styles.content1TopText}>Easy Return.</p>
+                    <p className={styles.content1BottomText}>Hassle Free Shipping.</p>
                 </div>
             </div>
-            
+        </div>
     );
 }
 export default IndexContent1;

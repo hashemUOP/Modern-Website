@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/index.module.css"; 
+import styles from "../styles/index.module.css"; 
 import {IndexImages,IndexImagesMobile} from "../components/index/IndexImages.jsx";
 import { Header, HeaderMobile } from "../components/index/Header.jsx";
 import 'font-awesome/css/font-awesome.min.css';
@@ -11,8 +11,8 @@ import Footer from "../components/index/Footer.jsx";
 export default function Home(){
     return (
         <div>
-            <div id="desktop">
-                <div className="grid-container"> 
+            <div id={styles.desktop}>
+                <div className={styles.gridContainer}> 
                     <Header />
                     <IndexImages />
                     <IndexCards />
@@ -21,8 +21,8 @@ export default function Home(){
                     <Footer />
                 </div>
                 </div>
-                <div id="mobile">
-                <div className="grid-container-mobile">
+                <div id={styles.mobile}>
+                <div className={styles.gridContainerMobile}>
                     <HeaderMobile />
                     <IndexImagesMobile/>
                     <Footer/>

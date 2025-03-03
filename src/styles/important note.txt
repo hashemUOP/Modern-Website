@@ -1,6 +1,7 @@
 in react there is two types of css files
 
-*note body{} and *{} are global for all project components
+*note body{} and *{} and elements selectors like img{} are global css for all project components
+dont use them please
 
 1. global css files (normal css files)
 a css file that has extension file-name.css 
