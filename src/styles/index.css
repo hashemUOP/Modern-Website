@@ -666,8 +666,56 @@ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 #mobile {
   display: none; /* hide the  mobile version */
 }
-/* ************ */
-@media (max-width:783px){
+
+/* *****     special response code for header    ******* */
+@media (max-width: 1068px) and (min-width: 783px) {
+  .header-row1{
+    font-size: 70%;
+  }
+  .header-item2-row1{
+    font-size: 70%;
+  }
+  .header-item2-row2{
+    font-size: 70%;
+  }
+    .login-button{  
+      padding: 5px 25px;
+      width:100px;
+      margin-left: 20px;
+      font-size: 75%;
+    }
+    .signup-button{
+      width: 100px;
+      padding: 5px 25px;
+      font-size: 75%;
+      margin-left: 20px;
+    }
+    .cart-button{
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 2% 20px;
+      margin-left: 5px;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 17%;
+      font-size: 70%;
+      margin-bottom:5px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+    .pintrest{
+      margin-right: 5%;
+      margin-left: 10%;
+    }
+}
+
+/* ************************************ */
+
+
+/* *****     mobile css code    ******* */
+@media (max-width:782px){
   #desktop {
       display: none;  /* hide the desktop version */
     }

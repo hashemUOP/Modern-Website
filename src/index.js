@@ -8,6 +8,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import IndexContent1 from "./components/index/IndexContent1.jsx";
 import IndexContent2 from "./components/index/IndexContent2.jsx";
 import Footer from "./components/index/Footer.jsx";
+import ScreenWidthDisplay from "./components/index/WidthListener.jsx";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -15,8 +16,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <div>
+    <ScreenWidthDisplay/>
     <div id="desktop">
-      <div className="grid-container">    
+      <div className="grid-container"> 
+        
         <Header />
         <IndexImages />
         <IndexCards />
