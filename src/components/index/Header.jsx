@@ -28,7 +28,7 @@ function Marquee(){
 
 function Header(){
     return (
-        <div style={{height:"100%"}}>
+        <>
             <div className={styles.flexHeaderItem1}>
                 <div className={styles.headerRow1}>
                     <div className={styles.wordPlusArrow}>
@@ -118,7 +118,7 @@ function Header(){
             <div className={styles.flexHeaderItem3}>
                 <Marquee/>   
             </div>
-        </div>
+        </>
     );
 }
 

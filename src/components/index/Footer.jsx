@@ -14,7 +14,7 @@ function Footer() {
   }, []);
 
   return (
-    <div>
+    <>
       <div className={styles.footerContainer}>
         <div className={styles.footerColumns}>
           <p className={styles.header}>Urban D&eacute;n</p>
@@ -66,7 +66,7 @@ function Footer() {
           Copyright &copy; {year} | Urban D&eacute;n. All rights reserved.
         </p>
       </div>
-    </div>
+    </>
   );
 }
 

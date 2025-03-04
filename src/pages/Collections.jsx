@@ -1,11 +1,36 @@
 import React from "react";
-import ProductsListing from "../components/products/ProductsListing";
+import styles from "../styles/collections.module.css";
+import { Header } from "../components/index/Header";
+import Footer from "../components/index/Footer";
+import Cat from "../components/products/Cat";
 
-// Define the Collections component properly
-const Collections = () => {
-  const mostafa = "Mostafa"; 
+function Collections(){
+  return (
+    <div>
+      <div id={styles.desktop}>
+        <div className={styles.collectionsGridContainer}>
+          <div className={styles.gridItemHeader}>
+            <Header/>
+          </div>
+          <div className={styles.gridItemCat}>
+            <Cat/>
+          </div>
+          <div className={styles.gridItemCards}>
+            
+          </div>
+          <div className={styles.gridItemPaginator}>
+            
+          </div>
+          <div className={styles.gridItemFooter}>
+              <Footer/>
+          </div>
+        </div>
+      </div>  
+      <div id={styles.mobile}>
 
-  return <ProductsListing category={mostafa} />;
-};
+      </div>
+    </div>
+  );
+}
 
 export default Collections;

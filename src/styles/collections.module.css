@@ -1,0 +1,95 @@
+.collectionsGridContainer {
+    display: grid;
+    height: 2300px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 7% 50% auto auto;
+    grid-template-areas: 
+        "header"
+        "cat"
+        "cards"
+        "paginator"
+        "footer";
+    background-color: yellowgreen;
+    gap: 30px;
+}
+
+.gridItemHeader {
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+}
+
+/* ******** Category ********* */
+
+.gridItemCat {
+    grid-area: cat;
+}
+.catRow{
+    background-color: white;
+    height: 100%;
+    width: 91%;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+}
+.catImgDiv{
+    height:100%;
+    width:180px;
+    background-color:orange;
+    border-radius: 15px;
+}
+.catImg{
+    width: 100%;
+    object-fit:cover;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+}
+/* ******** ******** ********* */
+
+
+.gridItemCards {
+    grid-area: cards;
+    background-color: red;
+}
+
+.gridItemPaginator {
+    grid-area: paginator;
+    background-color: beige;
+}
+/* ******** Footer ********* */
+.gridItemFooter {
+    grid-area: footer;
+    background-color: #12131a;
+}
+.gridItemFooter hr {
+    width: 85%; 
+    border: 1px solid #505159;
+    margin-bottom: 20px;
+    margin-left: 8%;
+  }
+/* ******** ****** ********* */
+
+#desktop {
+    display: block; /* Show the desktop version */
+}
+
+#mobile {
+    display: none; /* Hide the mobile version */
+}
+
+/* Special response code for header */
+@media (max-width: 1068px) and (min-width: 783px) {
+    /* Add responsive styles here if needed */
+}
+
+/* Mobile CSS code */
+@media (max-width: 783px) {
+    #desktop {
+        display: none; /* Hide the desktop version */
+    }
+    #mobile {
+        display: block; /* Show the mobile version */
+    }
+}
