@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styles from "../../styles/collections.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faForwardStep, faAngleRight,faAngleLeft,faBackwardStep} from "@fortawesome/free-solid-svg-icons"; 
+
 
 export default function Paginator() {
   return (
@@ -12,15 +15,15 @@ export default function Paginator() {
           <span>1-25 of 500 items</span>
         </div>
         <div className={styles.row2Pag}>
-          <button>&#8656;</button>
-          <button>&#8592;</button>
+          <button><FontAwesomeIcon icon={faBackwardStep} /></button>
+          <button><FontAwesomeIcon icon={faAngleLeft} /></button>
           <button>1</button>
           <button style={{backgroundColor:"black",color:"white"}}>2</button>
           <button>3</button>
           <button>4</button>
           <button>...</button>
-          <button>&#8594;</button>
-          <button>&#8658;</button>
+          <button><FontAwesomeIcon icon={faAngleRight} /></button>
+          <button><FontAwesomeIcon icon={faForwardStep} /></button>
         </div>
       </div>
     </>

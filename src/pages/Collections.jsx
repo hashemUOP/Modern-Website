@@ -4,6 +4,7 @@ import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
 import Cat from "../components/products/Cat";
 import Paginator from "../components/products/Paginator";
+import Cards from "../components/products/Cards";
 
 function Collections(){
   return (
@@ -17,7 +18,7 @@ function Collections(){
             <Cat/>
           </div>
           <div className={styles.gridItemCards}>
-            
+            <Cards/>
           </div>
           <div className={styles.gridItemPaginator}>
             <Paginator/>

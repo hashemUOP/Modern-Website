@@ -1,9 +1,9 @@
 .collectionsGridContainer {
     display: grid;
-    height: 2300px;
+    height: 2400px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 7% 7% 50% auto auto;
+    grid-template-rows: 10% 7% 50% auto auto;
     grid-template-areas: 
         "header"
         "cat"
@@ -28,8 +28,8 @@
 .catRow{
     background-color: white;
     height: 100%;
-    width: 91%;
-    margin-left: 3%;
+    width: 80%;
+    margin-left: 10%;
     display: flex;
     align-items: center;
 }
@@ -48,10 +48,20 @@
 /* ******** ******** ********* */
 
 
+/* ******** **Cards* ********  */
 .gridItemCards {
     grid-area: cards;
     background-color: red;
 }
+.cardsContainer{
+    background-color: white;
+    width: 85%;
+    margin-left: 10%;
+    height: 100%;
+}
+
+/* ******** ******** ********  */
+
 
 /* ******** Pagination ********* */
 .gridItemPaginator {
@@ -63,9 +73,10 @@
     display: flex;
     width: 70%;
     height: 30%;
-    justify-self: center;
+    justify-self: left;
     justify-content: space-evenly;
     border-radius: 5px;
+    margin-left: 8.5%;
   }
 .row1Pag{
     width: 40%;
