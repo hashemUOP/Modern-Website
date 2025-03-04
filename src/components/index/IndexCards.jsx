@@ -26,7 +26,7 @@ function scrollRight() {
 
 function IndexCards() {
     return (
-        <div className={styles.gridItemCards}>
+        <div style={{height:"100%"}}>
             <div className={styles.cardsContainer} id="scrollContainer">
                 {cardsInfo.map((card, index) => (
                     index === 0 ?

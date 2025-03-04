@@ -8,7 +8,7 @@ function redirect(ref){
 
 function IndexContent2(){
     return  (
-        <div className={styles.gridItemContent2}>
+        <div style={{height:"100%",width:"100%"}}>
             <div className={styles.content2FlexContainer}>
                 <p>Sign Up for the <strong>NEWSLETTER</strong></p>
                 <form className={styles.formButtonRow}>

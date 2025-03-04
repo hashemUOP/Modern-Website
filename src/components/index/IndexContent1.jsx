@@ -3,7 +3,7 @@ import styles from "../../styles/index.module.css";
 
 function IndexContent1(){
     return (
-        <div className={styles.gridItemContent1}>
+        <div style={{height:"100%",width:"100%"}}>
             <div className={styles.conetent1Header}>
                 <p>Our Services</p>
                 <hr/>

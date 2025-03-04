@@ -13,32 +13,32 @@
 }
 .gridItemHeader{
   background-color: white;
-  grid-area: "header";
+  grid-area: header;
   display: flex;
   flex-direction: column;
 }
 .gridItemImages{
-  grid-area: "images-slides";
+  grid-area: images-slides;
   
 }
 .gridItemCards{
-  grid-area: "cards";
+  grid-area: cards;
 }
 .gridItemContent1{
   background-color: white;
-  grid-area: "content1";
+  grid-area: content1;
   justify-items: center;  
   align-content: flex-start;
 }
 .gridItemContent2{
-  grid-area: "content2";
+  grid-area: content2;
   justify-items: center;  
   align-content: flex-start;
   border-top: 2px solid #dfdfdf;
 }
 .gridItemFooter{
   background-color: #12131a;
-  grid-area: "footer";
+  grid-area: footer;
 }
 .flexHeaderItem1{
   height: 40%;
@@ -267,7 +267,6 @@
   position: relative; 
   width: 100%;
   height: 100%;
-  
 }
 .imgsContainer img{
   height: 100%;
@@ -383,7 +382,7 @@
 .cardsContainer {
   display: flex;
   background-color: white;
-  height: 70%;  
+  height: 80%;  
   overflow-x: auto;
   overflow-y: hidden;
   align-items: stretch;  
@@ -548,6 +547,10 @@
   height: 50%;
   width: 80%;
   justify-content: space-evenly;
+  padding: 0px 10%;
+  align-self: center;
+  margin-bottom: 10%;
+  margin-left: 9%;
 }
 .content1FlexColumns {
   display: flex;
@@ -600,8 +603,8 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   align-content: center;
   align-items: center;
   justify-items: center;
@@ -750,6 +753,7 @@
       justify-self: flex-end;
       align-self: flex-end;
       width: 100%;
+      
   }
 
   .footerSocial {

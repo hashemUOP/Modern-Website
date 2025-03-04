@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-
+import Collections from "./pages/Collections";
+import Page404 from "./pages/404";
 const App = () => {
   return (
     <BrowserRouter>
@@ -10,6 +11,10 @@ const App = () => {
         <Route index element = {<Home/>} />
         <Route path="/home" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/collections" element={<Collections/>}/>
+
+         {/* direct-all non existant routes for 404 */}
+         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );

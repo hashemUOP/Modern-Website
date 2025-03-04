@@ -14,7 +14,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className={styles.gridItemFooter}>
+    <div>
       <div className={styles.footerContainer}>
         <div className={styles.footerColumns}>
           <p className={styles.header}>Urban D&eacute;n</p>

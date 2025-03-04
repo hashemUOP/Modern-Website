@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import cartIcon from '../../assets/img/basket (3).png';
 import arrowDown from '../../assets/icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg';
 import Drawer from "./Drawer.jsx";
 import styles from "../../styles/index.module.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
-function redirect(ref){
-    window.location.href = ref;
-}
 
 function Marquee(){
     return (
@@ -31,17 +28,18 @@ function Marquee(){
 
 function Header(){
     return (
-        <div className={styles.gridItemHeader}>
+        <div style={{height:"100%"}}>
             <div className={styles.flexHeaderItem1}>
                 <div className={styles.headerRow1}>
                     <div className={styles.wordPlusArrow}>
                         <div className={styles.menu}>
-                            <span>Home</span>
+                            <Link to="/" style={{all:"unset"}}>
+                                <span>Home</span>
+                            </Link>
                             <img src={arrowDown} width="15px"/>
                             <ul className={styles.dropDown}>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
+                                <li>About us</li>
+                                <li>Contact</li>
                             </ul>
                         </div>
                     </div>
@@ -58,7 +56,9 @@ function Header(){
                     </div>
                     <div className={styles.wordPlusArrow}>
                         <div className={styles.menu}>
-                            <span>Collections</span>
+                            <Link to="/collections" style={{all:"unset"}}>
+                                <span>Collections</span>
+                            </Link>    
                             <img src={arrowDown} height="15px"/>
                             <ul className={styles.dropDown}>
                                 <li>Item 1</li>
@@ -79,9 +79,9 @@ function Header(){
                         </div>
                     </div>
                 </div>
-                <div className={styles.headerRow2} onClick={() => redirect('../html/index.htm')}>
+                <Link to="/" className={styles.headerRow2}>
                     <span>Urban D&eacute;n</span>
-                </div>
+                </Link>
                 <div className={styles.headerRow3}>
                     <i className="fa-solid fa-magnifying-glass" style={{ marginRight: "10%" }}></i>
                 </div>
@@ -110,7 +110,7 @@ function Header(){
                     <span><a href="#">FAQs</a></span>
                 </div>
                 <div className={styles.headerItem2Row3}>
-                    <button className={styles.cartButton} onClick={() => redirect('../html/index.htm')}>
+                    <button className={styles.cartButton} >
                         <img src={cartIcon} height="15px" />&nbsp;0 items in cart
                     </button>
                 </div>

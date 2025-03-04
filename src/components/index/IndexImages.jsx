@@ -10,7 +10,7 @@ function redirect(ref) {
 
 function IndexImages() {
   return (
-    <div className={styles.gridItemImages}>
+    <div style={{height:"100%"}}>
       <div className={styles.imgsContainer}>
         <img src={img1} className={styles.backgroundImg} alt="Kam-idris Art" />
 
