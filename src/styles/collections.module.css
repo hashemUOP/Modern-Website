@@ -36,7 +36,6 @@
 .catImgDiv{
     height:100%;
     width:180px;
-    background-color:orange;
     border-radius: 15px;
 }
 .catImg{
@@ -54,10 +53,53 @@
     background-color: red;
 }
 
+/* ******** Pagination ********* */
 .gridItemPaginator {
     grid-area: paginator;
-    background-color: beige;
+    background-color: white;
+    align-content: center;
 }
+.containerPag{
+    display: flex;
+    width: 70%;
+    height: 30%;
+    justify-self: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+  }
+.row1Pag{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: inherit;
+  }
+  .row1Pag span{
+    margin-left:7%;
+    font-size:75%;
+    margin-right:3%;
+}
+  
+.row2Pag{
+    width: 60%;
+    height: 100%;
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: inherit;
+  }
+  .row2Pag button{
+    border: none;
+    height: 70%;
+    width: 60px;
+    border-radius: 5px;
+    align-self: center;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #b6b7bb;
+  }
+/* ******** ******** ********* */
+
 /* ******** Footer ********* */
 .gridItemFooter {
     grid-area: footer;

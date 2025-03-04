@@ -3,6 +3,7 @@ import styles from "../styles/collections.module.css";
 import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
 import Cat from "../components/products/Cat";
+import Paginator from "../components/products/Paginator";
 
 function Collections(){
   return (
@@ -19,7 +20,7 @@ function Collections(){
             
           </div>
           <div className={styles.gridItemPaginator}>
-            
+            <Paginator/>
           </div>
           <div className={styles.gridItemFooter}>
               <Footer/>
