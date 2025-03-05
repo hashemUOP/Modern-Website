@@ -10,7 +10,6 @@
         "cards"
         "paginator"
         "footer";
-    background-color: yellowgreen;
     gap: 30px;
 }
 
@@ -51,7 +50,6 @@
 /* ******** **Cards* ********  */
 .gridItemCards {
     grid-area: cards;
-    background-color: red;
 }
 .cardsContainer{
     background-color: white;
@@ -59,6 +57,72 @@
     margin-left: 10%;
     height: 100%;
 }
+
+/* ******** **Card** ********  */
+.cardContainer{
+    height: calc(100%/2.4);
+    width: calc(100%/3.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.cardArrowsIcon{
+    width: 2.5em;
+    height: 8%;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color:white;
+    border: 2px solid #C0C0C0;
+}
+.inStock{
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: absolute;
+    top: 15px;
+    width: 29%;
+    height: 8%;
+    font-size: 10px;
+    border-color: #E5E4E2;
+    border-left: none;
+    cursor:unset;
+    font-weight: bold;
+    pointer-events: none;
+}
+.cardImg{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: inherit;
+}
+.cardColumn{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+.cardSmallImgs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: inherit;
+}
+.smallImgContainer{
+    height: 100%;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(198, 195, 189);
+    overflow: hidden;
+}
+/* ******** ******** ********  */
+
+
 
 /* ******** ******** ********  */
 
