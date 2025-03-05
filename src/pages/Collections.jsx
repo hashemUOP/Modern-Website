@@ -2,9 +2,9 @@ import React from "react";
 import styles from "../styles/collections.module.css";
 import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
-import Cat from "../components/products/Cat";
-import Paginator from "../components/products/Paginator";
-import Cards from "../components/products/Cards";
+import Cat from "../components/collections/Cat";
+import Paginator from "../components/collections/Paginator";
+import Cards from "../components/collections/Cards";
 
 function Collections(){
   return (

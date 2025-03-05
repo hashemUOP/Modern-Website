@@ -7,6 +7,8 @@ import cardImage4 from "../../assets/img/image119096.jpg";
 import cardImage5 from "../../assets/img/french-linen-olive-green-hero_14.jpg";
 import cardImage6 from "../../assets/img/81dfKK-q0AL.jpg";
 import styles from "../../styles/index.module.css";
+import { FaArrowRight } from "react-icons/fa6";
+
 
 const cardsInfo = [
     { text1: "Cloud Sectional Sofa", text2: "Five Stars China Factory", img: cardImage1 },
@@ -43,7 +45,7 @@ function IndexCards() {
                     </div>
                 ))}
                 <button className={styles.arrowButton} onClick={scrollRight}>
-                    <i className="fa fa-arrow-right"></i>
+                    <FaArrowRight />
                 </button>
             </div>
         </div>

@@ -1,0 +1,186 @@
+.collectionsGridContainer {
+    display: grid;
+    height: 2000px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 25% 7% 30% 10% auto;
+    grid-template-areas:
+        "header" 
+        "BigImages"
+        "SmallImages"
+        "details"
+        "space"
+        "footer";
+}
+.gridItemHeader{
+    grid-area: header;
+}
+
+/* ***** Big images **** */
+.gridItemBigImages{
+    grid-area: BigImages;
+    align-content: end;
+}
+.bigImgsContainer {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.bigImg {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ***** ********** **** */
+
+/* ***** *Small Imgs **** */
+.gridItemSmallImages{
+    grid-area: SmallImages;
+    align-content: end;
+}
+.smallImgsRow{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.cardSmallImgs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: inherit;
+}
+.smallImgContainer{
+    height: 100%;
+    width: 7em;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(198, 195, 189);
+    overflow: hidden;
+}
+/* ***** ********** **** */
+
+/* ***** * details ***** */
+.gridItemDetails{
+    grid-area: details;
+    align-content: end;
+}
+.detailsContainer{
+   height: 90%;
+   width: 80%;
+   margin-left: 10%;
+   display: flex;
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+.detailsCol1{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.detailsCol1Item1{
+   height: 10%; 
+   width: 100%;
+   background-color: black;
+   color: white;
+   align-content: center;
+   text-align: left;
+   font-size: 80%;
+}
+.detailsCol1 h6{
+    font-size: 150%;
+    text-align: left;
+    margin-left: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.detailsCol1 p{
+    font-size: 100%;
+    text-align: left;
+    margin-left: 18px;
+    margin-top: 20px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.detailsCol2{
+    background-color: #f8f8f8;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.detailsCol2Item1{
+    height: 10%; 
+   width: 100%;
+   color: white;
+   text-align: left;
+   font-size: 80%;
+   display: flex;
+   align-content: end;
+}
+.detailsCol2Item1Row1{
+    display: flex;
+    margin-top: auto;
+    margin-left: 30px;
+}
+.detailsCol2Item1Row1 button{
+    pointer-events: none;
+    height: 60%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 0px 10px;
+}
+
+/* ***** ********** **** */
+
+.gridItemFooter{
+    grid-area: footer;
+    background-color: #12131a;
+}
+
+#desktop {
+    display: block; /* show the desktop version */
+}
+
+#mobile {
+    display: none; /* hide the mobile version */
+}
+
+/* special response code for header */
+@media (max-width: 1068px) and (min-width: 783px) {
+    .bigImgsContainer {
+        height: 60%;
+        width: 95%;
+        margin-left: 2%;
+        margin-bottom: 6%;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 5px;
+    }
+    .gridItemSmallImages{
+        grid-area: SmallImages;
+        align-content: start;
+    }
+}
+
+/* mobile CSS code */
+@media (max-width: 783px) {
+    #desktop {
+        display: none; /* hide the desktop version */
+    }
+    #mobile {
+        display: block; /* Show the mobile version */
+    }
+}

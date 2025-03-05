@@ -3,6 +3,7 @@ import img1 from "../../assets/img/kam-idris-_HqHX3LBN18-unsplash.jpg";
 import mobileImg from "../../assets/img/istockphoto-1353370305-612x612.webp";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from "../../styles/index.module.css";
+import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
 
 function redirect(ref) {
   window.location.href = ref;
@@ -16,7 +17,7 @@ function IndexImages() {
 
         <div className={styles.overlay}>
           <button className={styles.arrow}>
-            <i className="fa fa-arrow-left"></i>
+          <FaArrowLeft />
           </button>
 
           <div className={styles.textContent}>
@@ -36,7 +37,7 @@ function IndexImages() {
           </div>
 
           <button className={styles.arrow}>
-            <i className="fa fa-arrow-right"></i>
+            <FaArrowRight />
           </button>
         </div>
       </div>

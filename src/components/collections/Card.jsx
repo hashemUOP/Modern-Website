@@ -3,12 +3,21 @@ import pic from "../../assets/img/81dfKK-q0AL.jpg";
 import { IoMdEye } from "react-icons/io";
 import { CgArrowsExchangeAlt } from "react-icons/cg";
 import styles from "../../styles/collections.module.css";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Card(){
+    
+    //navigate to product details on tap
+    const navigate = useNavigate();
+
+    const handleCardClick = () => {
+      navigate('/product-details');
+    };
+  
     return (
         <>
-            <div className={styles.cardContainer}>
+            <div className={styles.cardContainer} onClick={handleCardClick}>
                 <button className={styles.cardArrowsIcon}>
                     <CgArrowsExchangeAlt size={25} color="#71797E" />
                 </button>
