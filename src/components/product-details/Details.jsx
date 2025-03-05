@@ -23,6 +23,9 @@ export default function Details() {
             also enjoying the durability and quality of this unique piece.
             Elevate your home decor today.
           </p>
+          <div style={{height:"150px",width:"93%",backgroundColor:"#f8f8f8",marginLeft:"15px",borderRadius:"8px"}}>
+
+          </div>
         </div>
         <div className={styles.detailsCol2}>
           <div className={styles.detailsCol2Item1}>
@@ -103,6 +106,7 @@ export default function Details() {
           <p style={{ marginLeft: "30px", textAlign: "left" }}>
             Product Quantity:
           </p>
+          <div style={{display:"flex"}}>
           <div
             style={{
               display: "flex",
@@ -146,6 +150,9 @@ export default function Details() {
             >
                 +
             </button>
+            
+            </div>
+            <span style={{alignSelf:"center",fontSize:"70%",fontWeight:"bold",marginLeft:"10px",color:"grey"}}>Subtotal: $280.00</span>
           </div>
             <button
             style={{
