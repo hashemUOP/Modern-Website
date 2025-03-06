@@ -160,7 +160,16 @@
     grid-area: footer;
     background-color: #12131a;
 }
-
+.quantityBar{
+    display: "flex";
+    width: "50%";
+    height: "60px";
+    border: "2px solid lightgrey";
+    border-radius: "8px";
+    margin-left: 30px;
+    justify-content: space-between;
+    align-content: center;
+}
 #desktop {
     display: block; /* show the desktop version */
 }

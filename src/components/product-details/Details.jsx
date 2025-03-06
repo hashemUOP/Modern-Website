@@ -24,6 +24,7 @@ export default function Details() {
             also enjoying the durability and quality of this unique piece.
             Elevate your home decor today.
           </p>
+          <BootStrapDrawer/>
           <div className={styles.drawersContainer}>
             <Box name={"Product Details"} isFirst />
             <Box name={"Measurements"}/>
@@ -189,7 +190,11 @@ export default function Details() {
 
 function Box({name,isFirst}){
   return (
-    <div style={{
+    <div 
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+      style={{
       display:"flex",
       width:"100%",
       height:"50%",
@@ -204,5 +209,32 @@ function Box({name,isFirst}){
       <span style={{marginLeft:"10px"}}>{name}</span>
       <HiOutlineArrowLongRight size={40} style={{marginRight:"10px"}}/>
     </div>
+  );
+}
+
+
+function BootStrapDrawer(){
+  return (
+    <div
+  className="offcanvas offcanvas-end"
+  tabIndex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div className="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Drawer Title</h5>
+    <button
+      type="button"
+      className="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div className="offcanvas-body">
+    {/* Add your drawer content here */}
+    <p>This is the content of the drawer on the right.</p>
+  </div>
+</div>
+
   );
 }

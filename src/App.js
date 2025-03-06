@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Collections from "./pages/Collections";
 import Page404 from "./pages/404";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import CheckOut from "./pages/CheckOut";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/login" element={<Login/>}/>
         <Route path="/collections" element={<Collections/>}/>
         <Route path="/product-details" element={<ProductDetails/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/check-out" element={<CheckOut/>}/>
 
          {/* direct-all non existant routes for 404 */}
          <Route path="*" element={<Page404 />} />

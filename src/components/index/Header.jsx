@@ -1,10 +1,9 @@
 import React, { useState,useEffect } from "react";
-import cartIcon from '../../assets/img/basket (3).png';
 import arrowDown from '../../assets/icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg';
 import Drawer from "./Drawer.jsx";
 import styles from "../../styles/index.module.css";
-import { Link} from "react-router-dom";
-
+import { Link,useNavigate} from "react-router-dom";
+import { FaBagShopping } from "react-icons/fa6";
 
 function Marquee(){
     return (
@@ -110,9 +109,7 @@ function Header(){
                     <span><a href="#">FAQs</a></span>
                 </div>
                 <div className={styles.headerItem2Row3}>
-                    <button className={styles.cartButton} >
-                        <img src={cartIcon} height="15px" />&nbsp;0 items in cart
-                    </button>
+                    <CartRedirect />
                 </div>
             </div>
             <div className={styles.flexHeaderItem3}>
@@ -159,3 +156,19 @@ function HeaderMobile() {
 }
 
 export { Header, HeaderMobile };
+
+
+
+function CartRedirect(){
+     //navigate to cart on tap
+     const navigate = useNavigate();
+
+     const handleCartClick = () => {
+       navigate('/cart');
+     };
+     return (
+        <button className={styles.cartButton}  onClick={handleCartClick}>
+        <FaBagShopping size={15} style={{marginRight:"5px"}}/> &nbsp;0 items in cart
+        </button> 
+     );
+}

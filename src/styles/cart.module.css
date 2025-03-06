@@ -1,0 +1,121 @@
+.cartGridContainer {
+    display: grid;
+    min-height: 100vh; 
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 1fr auto;
+    grid-template-areas:
+        "header" 
+        "Content"
+        "footer";
+        gap: 50px;
+}
+
+.gridItemHeader {
+    grid-area: header;
+}
+
+.gridItemContent {
+    grid-area: Content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contentContainer {
+    display: flex;
+    width: 90%;
+    margin-left: 4%;
+    min-height: 650px;
+    column-gap: 20px;
+}
+.contentRight{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+.contentRightItem1{
+    display: flex;
+    width: 100%;
+    min-height: 5%;
+    justify-content: space-between;
+    align-items:end;
+    margin-bottom: 20px;
+}
+.contentRightItem2{
+    display: flex;
+    min-height: 5%;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+    align-items: end;
+    background-color: white;
+}
+.contentRightItem3{
+    display: flex;
+    min-height: 30%;
+    border-bottom: 2px solid lightgrey;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+}
+.contentRightItem3Row1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.productImg{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 120px;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.quantityButton{
+    width: calc(100%/3);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.contentLeft{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 42%;
+    border-radius: 13px;
+    border: 2px solid lightgrey;
+}
+
+.gridItemFooter {
+    grid-area: footer;
+    background-color: #12131a;
+}
+
+#desktop {
+    display: block; /* show the desktop version */
+}
+
+#mobile {
+    display: none; /* hide the mobile version */
+}
+
+/* special response code for header */
+@media (max-width: 1068px) and (min-width: 783px) {
+    
+}
+
+/* mobile CSS code */
+@media (max-width: 783px) {
+    #desktop {
+        display: none; /* hide the desktop version */
+    }
+    #mobile {
+        display: block; /* Show the mobile version */
+    }
+}
