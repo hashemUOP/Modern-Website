@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/productdetails.module.css";
 import { FiShare2 } from "react-icons/fi";
 import { CgArrowsExchangeAlt } from "react-icons/cg";
+import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 export default function Details() {
   return (
@@ -23,8 +24,9 @@ export default function Details() {
             also enjoying the durability and quality of this unique piece.
             Elevate your home decor today.
           </p>
-          <div style={{height:"150px",width:"93%",backgroundColor:"#f8f8f8",marginLeft:"15px",borderRadius:"8px"}}>
-
+          <div className={styles.drawersContainer}>
+            <Box name={"Product Details"} isFirst />
+            <Box name={"Measurements"}/>
           </div>
         </div>
         <div className={styles.detailsCol2}>
@@ -182,5 +184,25 @@ export default function Details() {
           </div>
       </div>
     </>
+  );
+}
+
+function Box({name,isFirst}){
+  return (
+    <div style={{
+      display:"flex",
+      width:"100%",
+      height:"50%",
+      alignContent:"center",
+      justifyContent:"space-between",
+      alignItems:"center",
+      fontWeight:"bold",
+      fontSize:"100%",
+      borderBottom: isFirst ? "1px solid grey" : "none",
+      cursor:"pointer"
+    }}>
+      <span style={{marginLeft:"10px"}}>{name}</span>
+      <HiOutlineArrowLongRight size={40} style={{marginRight:"10px"}}/>
+    </div>
   );
 }

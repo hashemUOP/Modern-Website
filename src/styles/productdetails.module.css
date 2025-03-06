@@ -142,6 +142,17 @@
     color: white;
     padding: 0px 10px;
 }
+.drawersContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    width: 93%;
+    background-color: #f8f8f8;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
 
 /* ***** ********** **** */
 
