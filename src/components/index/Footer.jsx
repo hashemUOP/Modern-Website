@@ -60,7 +60,7 @@ function Footer() {
           <p onClick={() => redirect("#")}>Contact support</p>
         </div>
       </div>
-      <hr />
+      <hr style={{color:"lightgray"}}/>
       <div style={{display:"flex",justifyContent:"center"}}>
         <p id="setYear" className={styles.footerSpan}>
           Copyright &copy; {year} | Urban D&eacute;n. All rights reserved.
