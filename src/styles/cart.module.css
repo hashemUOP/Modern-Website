@@ -105,6 +105,7 @@
   .gridItemFooter {
     grid-area: footer;
     background-color: #12131a;
+    
   }
   
   /* Responsive visibility */

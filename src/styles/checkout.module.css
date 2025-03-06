@@ -1,0 +1,89 @@
+.cartGridContainer {
+    display: grid;
+    width: 100%;
+    min-height: 100vh; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 50px auto 350px;
+    grid-template-areas:
+      "header"
+      "path"
+      "Content"
+      "footer";
+    gap: 20px;
+  }
+  
+  .gridItemHeader {
+    grid-area: header;
+  }
+  .gridItemPath{
+    grid-area: path;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+  }
+  .gridItemContent {
+    grid-area: Content;
+  }
+  .contentContainer{
+    display: flex;
+    height:700px;
+    width: 80.5%;
+    justify-self: center;
+    gap: 30px;
+    border-radius: 10px;
+    justify-content: left;
+    align-items: start;
+  }
+  .contentLeft{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    border-radius: inherit;
+    border: 2px solid lightgray;
+  }
+  .row1L{
+    display:flex;
+    justify-content:left;
+    margin-left:30px;
+    font-weight:bold;
+    margin-top:25px;
+    color:#36454F;
+  }
+  .customButton{
+    background-color: white;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .contentRight{
+    width: 40%;
+    height: 100%;
+    border-radius: inherit;
+    border: 2px solid lightgray;
+  }
+  .gridItemFooter {
+    grid-area: footer;
+    background-color: #12131a;
+  }
+  
+  #desktop {
+    display: block;
+  }
+  
+  #mobile {
+    display: none;
+  }
+  
+  @media (max-width: 783px) {
+    #desktop {
+      display: none;
+    }
+    #mobile {
+      display: block;
+    }
+  }
+  
