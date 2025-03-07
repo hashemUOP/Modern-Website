@@ -18,7 +18,7 @@ export default function(){
                     <img src={pic} className={styles.cardSmallImgs}/>
                 </div>
                 <div className={styles.smallImgContainer}>
-                    <img src={pic} className={styles.cardSmallImgs} style={{filter: "blur(0.7px)  opacity(0.8)"}}/>
+                    <img src={pic} className={styles.cardSmallImgs}/>
                 </div>
                 <button style={{backgroundColor:"black",borderRadius:"10px",height:"40%",width:"2.5em",marginLeft:"10%"}}>
                     <FaArrowRight color="white"/>

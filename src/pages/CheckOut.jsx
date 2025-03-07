@@ -34,7 +34,7 @@ export default function CheckOut(){
 }
 
 
-function Path(){
+export function Path(){
     return(
         <>
         <Link to= "/cart">

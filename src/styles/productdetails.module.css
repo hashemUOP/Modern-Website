@@ -3,9 +3,10 @@
     height: 2000px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 8% 25% 7% 30% 10% auto;
+    grid-template-rows: 8% 60px 25% 7% 30% 10% auto;
     grid-template-areas:
         "header" 
+        "path"
         "BigImages"
         "SmallImages"
         "details"
@@ -19,7 +20,7 @@
 /* ***** Big images **** */
 .gridItemBigImages{
     grid-area: BigImages;
-    align-content: end;
+    align-content: center;
 }
 .bigImgsContainer {
     height: 80%;
@@ -28,6 +29,12 @@
     display: flex;
     justify-content: space-evenly;
     border-radius: 5px;
+}
+
+.gridItemPath{
+    display: flex;
+    grid-area: path;
+    align-items: end;
 }
 
 .bigImg {
@@ -44,7 +51,7 @@
 /* ***** *Small Imgs **** */
 .gridItemSmallImages{
     grid-area: SmallImages;
-    align-content: end;
+    align-content: start;
 }
 .smallImgsRow{
     display: flex;
