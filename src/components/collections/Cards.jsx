@@ -7,16 +7,25 @@ export default function(){
     return (
         <>
             <div className={styles.cardsContainer}>
-                <div style={{display:"flex",height:"50%",width:"100%",justifyContent:"space-evenly"}}>
+                <div style={{display:"flex",height:"47%",width:"100%",justifyContent:"space-evenly",gap:"30px",marginBottom:"70px"}}>
                     <Card/>
-                    <Card/>
-                    <Card/>
-                </div>
-                <div style={{display:"flex",height:"50%",width:"100%",justifyContent:"space-evenly"}}>
                     <Card/>
                     <Card/>
                     <Card/>
                 </div>
+                <div style={{display:"flex",height:"47%",width:"100%",justifyContent:"space-evenly",gap:"30px",marginBottom:"70px"}}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+                <div style={{display:"flex",height:"47%",width:"100%",justifyContent:"space-evenly",gap:"30px"}}>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+                
             </div>
         </>
     );

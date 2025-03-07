@@ -552,6 +552,10 @@
   margin-bottom: 10%;
   margin-left: 9%;
 }
+.content1FlexColumns:hover{
+  background-color: white;
+  cursor: pointer;
+}
 .content1FlexColumns {
   display: flex;
   flex-direction: column;

@@ -26,14 +26,14 @@ export default function Card(){
                 </button>
                 <img src={pic} className={styles.cardImg}/>
                 <div className={styles.cardColumn}>
-                    <div style={{display:"flex",marginTop:"4%",fontSize:"80%",fontWeight:"600"}}>
+                    <div style={{display:"flex",marginTop:"4%",fontSize:"80%",fontWeight:"400"}}>
                         <span style={{marginLeft:"10px"}}>shopID202120121</span>
                         <span  style={{marginLeft:"auto",marginRight:"10px"}}>save $35</span>
                     </div>
                     <p style={{fontWeight:"900",textAlign:"left",marginLeft:"10px",marginBottom:"0px",marginTop:"4%",fontSize:"90%"}}>
                         Product Full Name
                     </p>
-                    <div style={{display:"inline",textAlign:"left",marginTop:"4%",fontSize:"80%",fontWeight:"600"}}>
+                    <div style={{display:"inline",textAlign:"left",marginTop:"4%",fontSize:"80%",fontWeight:"400"}}>
                         <span style={{marginLeft:"10px"}}>new price $890</span>
                         <span style={{textDecoration: "line-through" ,marginLeft:"10px",fontSize:"75%"}}>Old Price $925</span>    
                     </div>
@@ -50,11 +50,11 @@ export default function Card(){
                         <span style={{alignSelf:"center",marginLeft:"10px",fontWeight:"bold",color:"#71797E"}}>+3</span>
 
                     </div>
-                    <div style={{display:"flex",marginTop:"auto",width:"100%",height:"50px",marginBottom:"10px"}}>
-                        <button style={{width:"80%",border:"none",backgroundColor:"black",borderRadius:"15px",color:"white",marginLeft:"5%",fontSize:"80%"}}>
+                    <div style={{display:"flex",marginTop:"auto",width:"100%",height:"40px",marginBottom:"10px"}}>
+                        <button style={{width:"80%",border:"none",backgroundColor:"black",borderRadius:"15px",color:"white",marginLeft:"2%",fontSize:"80%"}}>
                             Add to cart 
                         </button>
-                        <button style={{width:"50px",backgroundColor:"white",borderRadius:"50%",height:"50px",marginLeft:"5px",marginRight:"10px"}}>
+                        <button style={{width:"40px",backgroundColor:"white",borderRadius:"50%",height:"40px",marginLeft:"5px",marginRight:"10px"}}>
                             <IoMdEye size={22}/>
                         </button>
                     </div>
