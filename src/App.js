@@ -7,6 +7,7 @@ import Page404 from "./pages/404";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import CheckOut from "./pages/CheckOut";
+import Payment from "./pages/Payment";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/product-details" element={<ProductDetails/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/check-out" element={<CheckOut/>}/>
+        <Route path="/payment" element={<Payment/>}/>
 
          {/* direct-all non existant routes for 404 */}
          <Route path="*" element={<Page404 />} />

@@ -124,7 +124,7 @@ function Button() {
           borderRadius: "8px",
           color: "white",
           fontSize: "150%",
-          marginLeft:"10px"
+          marginLeft:"10px",
         }}
       >
         -

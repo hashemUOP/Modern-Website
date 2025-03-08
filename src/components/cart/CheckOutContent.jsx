@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/checkout.module.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import img from "../../assets/img/81dfKK-q0AL.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function CheckOutContent(){
     return (
@@ -97,11 +98,7 @@ export default function CheckOutContent(){
                             <hr />
                         </div>  
                         <SeperateText textLeft={"Grandtotal"} textRight={"$2522.50"} isOne isLast/>
-                        <div style={{width:"100%",marginTop:"20px"}}>
-                            <button style={{backgroundColor:"black",color:"white",width:"90%",height:"50px",borderRadius:"10px"}}>
-                                Continue to payment
-                            </button>
-                        </div>
+                        <RedirectButton/>
                     </div>
                 </div>
             </div>
@@ -127,24 +124,42 @@ function DropDownMenu({text}){
     );
 }
 
-function CustomForm({text,textHolder,marginT}){
+export function CustomForm({text,textHolder,marginT,isPay}){
     return(
         <div style={{display:"flex",flexDirection:"column"}}>
             <div className={styles.row1L} style={{marginTop:marginT}}>
                 <span>{text}</span>
             </div>
-            <form style={{width:"95%",marginLeft:"15px",marginBottom:"15px"}}>
+            <form style={{width:isPay?"100%":"95%",marginLeft: isPay?"0px":"15px",marginBottom:"15px"}}>
                 <input type="text" className={styles.fullNameForm} placeholder={textHolder}></input>
             </form>   
         </div>
         
     );
 }
-function SeperateText({textRight,textLeft,isOne,isLast}){
+export function SeperateText({textRight,textLeft,isOne,isLast}){
     return (
         <div style={{display:"flex",width:"100%",justifyContent:"space-between",alignItems:"center"}}>
             <span style={{color:isLast? "black":"gray",fontWeight:isLast?"bold":"500",marginLeft:"22px"}}>{textLeft}</span>
             <span style={{color:isOne? "black" : "grey",fontWeight:"600",marginRight:"22px"}}>{textRight}</span>
         </div>
     );
+}
+
+function RedirectButton(){
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate("/payment");
+  };
+    return (
+        <div style={{width:"100%",marginTop:"20px"}}>
+            <button 
+            onClick={handleButtonClick}
+            style={{backgroundColor:"black",color:"white",width:"90%",height:"50px",borderRadius:"10px"
+
+            }}>
+                Continue to payment
+            </button>
+        </div>
+    )
 }

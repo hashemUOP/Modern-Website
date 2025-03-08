@@ -37,7 +37,7 @@ export default function CheckOut(){
 export function Path(){
     return(
         <>
-        <Link to= "/cart">
+        <Link to= "/cart" style={{all:"unset",cursor:"pointer"}}>
           <span style={{color:"gray"}}>Cart</span>
         </Link>
         
