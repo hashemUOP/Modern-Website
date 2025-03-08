@@ -9,6 +9,8 @@ import { FaCcPaypal } from "react-icons/fa6";
 import { FaStripe } from "react-icons/fa6";
 import { BsCashStack } from "react-icons/bs";
 
+
+
 const payMethodsUniqueAccordionIDs = new Map([
     ["credit-card", "0000001"],
     ["paypal", "0000002"],
@@ -65,10 +67,12 @@ export default function PaymentContetnt(){
                                 uniqueAccordionID={payMethodsUniqueAccordionIDs.get("cash")}
                             />
                         </div>
-                        <div style={{display:"flex",flexDirection:"column",border:"2px solid lightgrey",width:"95%",marginLeft:"20px"}}>
-                            
+                        <div style={{ display: "flex", width: "100%", marginLeft: "25px", alignItems: "center",marginBottom:"20px"}}>
+                          <label style={{ display: "flex", alignItems: "center", gap: "10px",fontWeight:"bold" }}>
+                            <input type="checkbox" style={{ width: "20px", height: "20px" }} />
+                            <span>Save my information for future checkout</span>
+                          </label>
                         </div>
-
                     </div>
                     <div className={styles.contentRight}>
                         <span style={{marginLeft:"20px",fontWeight:"bold",marginTop:"20px",marginBottom:"20px"}}>Your order</span>
@@ -127,7 +131,7 @@ function RedirectButton(){
       navigate("/payment");
     };
       return (
-          <div style={{width:"100%",marginTop:"20px"}}>
+          <div style={{width:"100%",marginTop:"15px"}}>
               <button 
               onClick={handleButtonClick}
               style={{backgroundColor:"black",color:"white",width:"90%",height:"50px",borderRadius:"10px"
