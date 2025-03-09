@@ -1,31 +1,19 @@
 import React from "react";
 import styles from "../../styles/login.module.css";
-import img from "../../assets/img/login/abstract-isometric-logo-design-free-logo-removebg-preview.png"
 import img2 from "../../assets/img/login/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg";
 function LoginResponsive() {
   return (
     <div className={styles.gridContainerLogin}>
-      <div className={styles.gridItem1}>
-        <img 
-          src={img2} 
-          className={styles.gridItem1Img} 
-          alt="background" 
-        />
-      </div>
       <div className={styles.gridItem2}>
         <div className={styles.flexContainer}>
-          <img 
-            src={img}
-            style={{ width: "auto", height: "100px" }} 
-            alt="logo" 
-          />
           <div className={styles.textDiv}>
             <h1>Welcome back!</h1>
-            <h5 className={styles.subtitle}>
+            <h6>
               Please enter your details
-            </h5>
+            </h6>
           </div>
-          <form action="login.htm" method="post">
+          <div className={styles.formsCol}>
+            <form action="login.htm" method="post">
             <input type="email" className={styles.inputForm} placeholder="Email" />
             <input type="password" className={styles.inputForm} placeholder="Password" />
           </form>
@@ -35,6 +23,8 @@ function LoginResponsive() {
               Remember password
             </label>
             <span className={styles.forgetText}>Forgot password?</span>
+          </div>
+          
           </div>
           <br />
           <div className={styles.buttonsColumn}>
@@ -53,6 +43,13 @@ function LoginResponsive() {
             </span>
           </div>
         </div>
+      </div>
+      <div className={styles.gridItem1}>
+        <img 
+          src={img2} 
+          className={styles.gridItem1Img} 
+          alt="background" 
+        />
       </div>
     </div>
   );

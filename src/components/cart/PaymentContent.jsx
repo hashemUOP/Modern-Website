@@ -160,7 +160,7 @@ function RedirectButton(){
               <div style={{ display: "flex", width: "100%", justifyContent: "space-between", alignItems: "center" }}>
                 <label style={{ fontWeight: "bold", display: "flex" }}>
                   <input
-                    type="radio"
+                    type="radio" 
                     style={{ marginRight: "10px", width: "20px", height: "20px" }}
                   />
                   <div>{tileTitle}</div>
