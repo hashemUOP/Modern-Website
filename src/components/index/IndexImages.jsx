@@ -48,7 +48,7 @@ function IndexImages() {
 function IndexImagesMobile() {
   return (
     <div className={styles.gridItemImages}>
-      <img src={mobileImg} className={styles.imagesImage} />
+      <img src={mobileImg} className={styles.imagesImage} alt="card"/>
       <div className={styles.imagesCol}>
         <h1>Give a hint</h1>
         <p>

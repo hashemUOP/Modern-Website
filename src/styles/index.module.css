@@ -659,25 +659,28 @@
 }
 /* *****     special response code for header    ******* */
 @media (max-width: 1068px) and (min-width: 783px) {
+  .headerRow2{
+    font-size: 60%;
+  }
   .headerRow1 {
-    font-size: 70%;
+    font-size: 60%;
   }
   .headerItem2Row1 {
-    font-size: 70%;
+    font-size: 60%;
   }
   .headerItem2Row2 {
-    font-size: 70%;
+    font-size: 60%;
   }
   .loginButton {  
       padding: 5px 25px;
       width: 100px;
       margin-left: 20px;
-      font-size: 75%;
+      font-size: 60%;
   }
   .signupButton {
       width: 100px;
       padding: 5px 25px;
-      font-size: 75%;
+      font-size: 60%;
       margin-left: 20px;
   }
   .cartButton {
@@ -690,22 +693,19 @@
       display: inline-flex;
       align-items: center;
       margin-right: 17%;
-      font-size: 70%;
+      font-size: 60%;
       margin-bottom: 5px;
       margin-top: 5px;
       cursor: pointer;
   }
-  .pintrest {
-      margin-right: 5%;
-      margin-left: 10%;
-  }
+  
   .boldWords {
       font-weight: bold; 
-      font-size: 80%;
+      font-size: 70%;
   }
   .lightWords {
       font-weight: 400;
-      font-size: 80%;
+      font-size: 70%;
   }
   .slash {
       font-size: 100%;

@@ -4,7 +4,7 @@ import pic from "../../assets/img/81dfKK-q0AL.jpg";
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
 
 
-export default function(){
+export default function SmallImg(){
     return (
         <>
             <div className={styles.smallImgsRow}>
@@ -12,13 +12,13 @@ export default function(){
                     <FaArrowLeft color="white"/>
                 </button>
                 <div className={styles.smallImgContainer}>
-                    <img src={pic} className={styles.cardSmallImgs}/>
+                    <img src={pic} className={styles.cardSmallImgs} alt="card"/>
                 </div>
                 <div className={styles.smallImgContainer} style={{marginRight:"10px",marginLeft:"20px"}}>
-                    <img src={pic} className={styles.cardSmallImgs}/>
+                    <img src={pic} className={styles.cardSmallImgs} alt="card"/>
                 </div>
                 <div className={styles.smallImgContainer}>
-                    <img src={pic} className={styles.cardSmallImgs}/>
+                    <img src={pic} className={styles.cardSmallImgs} alt="card"/>
                 </div>
                 <button style={{backgroundColor:"black",borderRadius:"10px",height:"40%",width:"2.5em",marginLeft:"10%"}}>
                     <FaArrowRight color="white"/>

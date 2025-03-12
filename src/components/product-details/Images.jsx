@@ -10,16 +10,19 @@ export default function Images(){
                     src={pic} 
                     className={styles.bigImg} 
                     style={{ opacity: 0.6 }} 
+                    alt="card"
                 />
                 <img 
                     src={pic} 
                     className={styles.bigImg} 
                     style={{ marginLeft: "2%", opacity: 1 }} 
+                    alt="card"
                 />
                 <img 
                     src={pic} 
                     className={styles.bigImg} 
                     style={{ marginLeft: "2%", opacity: 0.6 }}
+                    alt="card"
                 />
             </div>
         </>
