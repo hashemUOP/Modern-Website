@@ -56,18 +56,35 @@
     background-color: #12131a;
     height: 600px;
   }
-  .textArea{
-
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 15px;
+  }
+  label{
+    text-align: left;
+  }
+  input{
+    border-radius: 3px;
+    border-width: 1px;
+    height: 35px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  textarea{
+    border-radius: 3px;
+    border-width: 1px;
+    height: 200px;
+    text-align: left;
   }
   .buttonMessage{
     width: 95%;
     background-color: #12131a;
     border-radius: 15px;
     color: whitesmoke;
-    margin-top: auto;
     height: 35px;
     font-size: 80%;
-    margin-bottom: 80px;
   }
   /* Responsive visibility */
   #desktop {

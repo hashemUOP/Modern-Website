@@ -20,16 +20,18 @@ function Contact(){
                         <div className={styles.gridBox1}>
                             <div className={styles.gridBox1Content}>
                                 <p style={{fontWeight:"bold",fontSize:"120%"}}>Get in Touch</p>
-                                <p style={{fontSize:"120%"}}>Our friendly team would love to hear from you</p>
-                                <form>
+                                <p style={{fontSize:"90%"}}>Our friendly team would love to hear from you</p>
+                                <form className={styles.form} action="/submit" method="POST">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required />
+
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="email" required />
+
+                                    <label for="message">Your request</label>
+                                    <textarea id="message" name="message" class="textArea" placeholder="Your request..." required></textarea>
 
                                 </form>
-                                <form>
-
-                                </form>
-                                <textarea>
-
-                                </textarea>
                                 <button className={styles.buttonMessage}><FaArrowRight /> Send Message</button>
                             </div>
                         </div>
