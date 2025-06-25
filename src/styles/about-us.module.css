@@ -1,0 +1,89 @@
+.contactGridContainer {
+    display: grid;
+    width: 100%;
+    min-height: 100vh; 
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 700px 350px;
+    grid-template-areas:
+      "header"
+      "content1"
+      "footer";
+    gap: 50px;
+  }
+  
+  .gridItemHeader {
+    grid-area: header;
+  }
+  .gridItemContent{
+    grid-area: content1;
+    background-color: aqua;
+  }
+  .contactTextDiv{
+    display: flex;
+    justify-content: center;
+    color: #12131a;
+    font-weight: bold;
+    font-size: 1.75em;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);*/
+  }
+  .gridTwoBoxes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "box1 box2";
+  }
+  .gridBox1{
+    grid-area: box1;
+    background-color: palegreen;
+    height: 100%;
+  }
+  .gridBox1Content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: palegoldenrod;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .gridBox2{
+    grid-area: box2;
+    background-color: blue;
+     height: 600px;
+  }
+  .gridItemFooter {
+    grid-area: footer;
+    background-color: #12131a;
+    height: 600px;
+  }
+  .textArea{
+
+  }
+  .buttonMessage{
+    width: 95%;
+    background-color: #12131a;
+    border-radius: 15px;
+    color: whitesmoke;
+    margin-top: auto;
+    height: 35px;
+    font-size: 80%;
+    margin-bottom: 80px;
+  }
+  /* Responsive visibility */
+  #desktop {
+    display: block;
+  }
+  
+  #mobile {
+    display: none;
+  }
+  
+  @media (max-width: 783px) {
+    #desktop {
+      display: none;
+    }
+    #mobile {
+      display: block;
+    }
+  }
+  

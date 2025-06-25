@@ -8,6 +8,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import CheckOut from "./pages/CheckOut";
 import Payment from "./pages/Payment";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/check-out" element={<CheckOut/>}/>
         <Route path="/payment" element={<Payment/>}/>
+        <Route path="/contact" element={<Contact/>}/>
 
          {/* direct-all non existant routes for 404 */}
          <Route path="*" element={<Page404 />} />
