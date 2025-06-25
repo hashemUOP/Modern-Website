@@ -16,7 +16,6 @@
   }
   .gridItemContent{
     grid-area: content1;
-    background-color: aqua;
   }
   .contactTextDiv{
     display: flex;
@@ -34,22 +33,19 @@
   }
   .gridBox1{
     grid-area: box1;
-    background-color: palegreen;
     height: 100%;
   }
   .gridBox1Content{
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: palegoldenrod;
     align-items: flex-start;
     margin-left: 50px;
     margin-top: 50px;
   }
   .gridBox2{
     grid-area: box2;
-    background-color: blue;
-     height: 600px;
+    height: 600px;
   }
   .gridItemFooter {
     grid-area: footer;
@@ -71,13 +67,24 @@
     height: 35px;
     text-align: left;
     margin-bottom: 10px;
+    background-color: #F8F8F8;
   }
+  input::placeholder {
+  font-size: 0.85em;
+  color: #888;
+}
   textarea{
     border-radius: 3px;
     border-width: 1px;
     height: 200px;
     text-align: left;
+    resize: none; 
+    background-color: #F8F8F8;
   }
+  textarea::placeholder {
+  font-size: 0.85em;
+  color: #888;
+}
   .buttonMessage{
     width: 95%;
     background-color: #12131a;
@@ -85,6 +92,19 @@
     color: whitesmoke;
     height: 35px;
     font-size: 80%;
+  }
+  .box2Content{
+    display: flex;
+    flex-direction: column;
+    background-color: #12131a;
+    width: 75%;
+    height: 93%;
+    border-radius: 15px;
+    margin-left: 70px;
+    align-items: center;
+  }
+  .box2Content p{
+    color: whitesmoke;
   }
   /* Responsive visibility */
   #desktop {
