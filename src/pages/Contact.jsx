@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/about-us.module.css";
+import styles from "../styles/contact.module.css";
 import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
 import { FaArrowRight } from "react-icons/fa6";

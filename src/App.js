@@ -9,7 +9,7 @@ import Cart from "./pages/Cart";
 import CheckOut from "./pages/CheckOut";
 import Payment from "./pages/Payment";
 import Contact from "./pages/Contact";
-
+import Shop from "./pages/shop";
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,6 +23,7 @@ const App = () => {
         <Route path="/check-out" element={<CheckOut/>}/>
         <Route path="/payment" element={<Payment/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/shop" element={<Shop/>}/>
 
          {/* direct-all non existant routes for 404 */}
          <Route path="*" element={<Page404 />} />

@@ -1,0 +1,56 @@
+.shopGridContainer {
+    display: grid;
+    width: 100%;
+    min-height: 100vh; 
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 700px 400px;
+    grid-template-areas:
+      "header"
+      "content1"
+      "footer";
+    gap: 50px;
+  }
+  
+  .gridItemHeader {
+    grid-area: header;
+  }
+  .gridItemContent{
+    grid-area: content1;
+    background-color: blue;
+  }
+  .gridVerBoxes{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+  }
+  .vBox1{
+    background-color: coral;
+  }
+  .vBox2{
+    background-color: yellow;
+  }
+  .gridItemFooter {
+    grid-area: footer;
+    background-color: #12131a;
+  }
+  
+
+  /* Responsive visibility */
+  #desktop {
+    display: block;
+  }
+  
+  #mobile {
+    display: none;
+  }
+  
+  @media (max-width: 783px) {
+    #desktop {
+      display: none;
+    }
+    #mobile {
+      display: block;
+    }
+  }
+  

@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh; 
     grid-template-columns: 100%;
-    grid-template-rows: 160px 700px 350px;
+    grid-template-rows: 160px 700px 400px;
     grid-template-areas:
       "header"
       "content1"
@@ -50,7 +50,6 @@
   .gridItemFooter {
     grid-area: footer;
     background-color: #12131a;
-    height: 600px;
   }
   .form{
     display: flex;
@@ -106,6 +105,7 @@
   .box2Content p{
     color: whitesmoke;
   }
+  
   /* Responsive visibility */
   #desktop {
     display: block;

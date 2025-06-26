@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
 import arrowDown from '../../assets/icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg';
+import { FaAngleRight } from "react-icons/fa";
 import Drawer from "./Drawer.jsx";
 import styles from "../../styles/index.module.css";
 import { Link,useNavigate} from "react-router-dom";
@@ -41,6 +42,7 @@ function Header(){
                                 <Link to="/contact" style={{all:"unset"}}>
                                     <li>Contact</li>
                                 </Link>
+                                <li>Our Resources</li>
                             </ul>
                         </div>
                     </div>
@@ -48,11 +50,6 @@ function Header(){
                         <div className={styles.menu}>
                            <span>New Arrivals</span>
                             <img src={arrowDown} height="15px"/>
-                            <ul className={styles.dropDown}>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
                         </div>
                     </div>
                     <div className={styles.wordPlusArrow}>
@@ -62,21 +59,62 @@ function Header(){
                             </Link>    
                             <img src={arrowDown} height="15px"/>
                             <ul className={styles.dropDown}>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
+                                <li>Limited Collection</li>
+                                <li>Seasonal Collection</li>
+                                <li>Holidays Collection</li>
                             </ul> 
                         </div>
                     </div>
                     <div className={styles.wordPlusArrow}>
                         <div className={styles.menu}>
-                           <span>Resources</span>
+                           <Link to="/shop" style={{all:"unset"}}>
+                               <span>Shop</span> 
+                            </Link>
                             <img src={arrowDown} height="15px"/>
                             <ul className={styles.dropDown}>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul> 
+                                <li>
+                                 By Room <FaAngleRight />   
+                                    <ul>
+                                        <li>Living Room</li>
+                                        <li>Bedroom</li>
+                                        <li>Dining Room</li>
+                                        <li>Office</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                By Style <FaAngleRight /> 
+                                    <ul>
+                                        <li>Modern</li>
+                                        <li>Rustic</li>
+                                        <li>Minimalist</li>
+                                        <li>Industrial</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                By Season <FaAngleRight /> 
+                                    <ul>
+                                        <li>Winter</li>
+                                        <li>Autumn</li>
+                                        <li>Spring</li>
+                                        <li>Summer</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                Products <FaAngleRight />
+                                    <ul>
+                                        <li>Sofas & armchairs</li>
+                                        <li>Beds & mattresses</li>
+                                        <li>Storage furniture</li>
+                                        <li>Desks & desk chairs</li>
+                                        <li>Tables & Chairs</li>
+                                        <li>Textiles</li>
+                                        <li>Rugs, mats & flooring</li>
+                                        <li>Bathroom products</li>
+                                        <li>Decoration</li>
+                                        <li>Outdoor products</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

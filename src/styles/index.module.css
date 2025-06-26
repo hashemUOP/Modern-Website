@@ -71,16 +71,17 @@
 }
 .menu {
   display: flex;
-  align-items: center;  
+  align-items: center;
   position: relative;
   cursor: pointer;
 }
 
+/* first-level dropdown */
 .dropDown {
   display: none;
-  flex-direction: column;  
-  position: absolute;      
-  top: 100%;               
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
@@ -88,18 +89,44 @@
   margin: 0;
   list-style: none;
   min-width: 150px;
-  z-index: 100;           
+  z-index: 100;
 }
+
 .dropDown li {
+  position: relative; /* important for submenu positioning */
   padding: 0.5em 1em;
   white-space: nowrap;
 }
+
+/* submenu styles */
+.dropDown li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.5em 0;
+  list-style: none;
+  min-width: 150px;
+  z-index: 100;
+}
+
+/* hover on parent <li> shows nested submenu */
+.dropDown li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .dropDown li:hover {
   background-color: #f1f1f1;
 }
+
+/* show the dropdown when hovering over the top menu */
 .menu:hover .dropDown {
   display: flex;
 }
+
 .headerRow1{
   display: flex; 
   justify-content: space-evenly;
