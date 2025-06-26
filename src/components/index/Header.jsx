@@ -100,7 +100,7 @@ function Header(){
                                     </ul>
                                 </li>
                                 <li>
-                                Products <FaAngleRight />
+                                Furniture Type <FaAngleRight />
                                     <ul>
                                         <li>Sofas & armchairs</li>
                                         <li>Beds & mattresses</li>
@@ -112,6 +112,27 @@ function Header(){
                                         <li>Bathroom products</li>
                                         <li>Decoration</li>
                                         <li>Outdoor products</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                By Theme <FaAngleRight />
+                                    <ul>
+                                        <li>Small Space Solutions</li>
+                                        <li>Pet-Friendly Furniture</li>
+                                        <li>Apartment Living</li>
+                                        <li>Sustainable & Eco-Friendly</li>
+                                        <li>Smart Furniture</li>
+                                        <li>Modular Furniture</li>
+                                        <li>Storage Furniture</li>
+                                        <li>Student Essentials</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                By Launch or Trend <FaAngleRight />
+                                    <ul>
+                                        <li>Trending Now</li>
+                                        <li>Influencer Picks</li>
+                                        <li>Editor’s Choice</li>
                                     </ul>
                                 </li>
                             </ul>

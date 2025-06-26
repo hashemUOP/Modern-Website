@@ -3,12 +3,13 @@
     width: 100%;
     min-height: 100vh; 
     grid-template-columns: 100%;
-    grid-template-rows: 160px 700px 400px;
+    grid-template-rows: 160px 1100px 400px;
     grid-template-areas:
       "header"
       "content1"
       "footer";
     gap: 50px;
+    background-color: #f2f2f2;
   }
   
   .gridItemHeader {
@@ -25,11 +26,152 @@
     height: 100%;
   }
   .vBox1{
-    background-color: coral;
+    background-color: #f2f2f2;
+    
   }
+  
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    width: 80%;
+    height: 100%;
+    margin-top: 30px;
+    justify-self: center;
+    margin-left: 300px;
+}
+.div1 {
+    grid-row: span 2 / span 2;
+    background-color: white;
+    cursor: pointer;
+}
+.div1:hover {
+  filter: brightness(0.85); 
+}
+.div2 {
+    grid-row: span 2 / span 2;
+    background-color: white;
+    cursor: pointer;
+}
+.div2:hover {
+  filter: brightness(0.85); 
+}
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    background-color: white;
+    cursor: pointer;
+}
+.div3:hover {
+  filter: brightness(0.85); 
+}
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+    background-color: white;
+    cursor: pointer;
+}
+.div4:hover {
+  filter: brightness(0.85); 
+}
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background-color: white;
+    cursor: pointer;
+}
+.div5:hover {
+  filter: brightness(0.85); 
+}
+.div6 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    background-color: white;
+    cursor: pointer;
+}    
+.div6:hover {
+  filter: brightness(0.85); 
+}  
+.smallImgBox{
+    width:95%;
+    height:95%;
+    background-color:#e4e4e4;
+    margin-top:1.75%;
+    margin-left: 2.5%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+} 
+.smallImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.overlayText {
+  position: absolute;
+  top: 40px;              
+  left: 80px;             
+  color: black;
+  font-weight: bold;
+  font-size: 1.0em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.bigImgBox{
+    width:98%;
+    height:95%;
+    background-color:#e4e4e4;
+    margin-top:0.75%;
+    margin-left: 0.9%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
   .vBox2{
     background-color: yellow;
   }
+  
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+}
+    
+.div7 {
+    grid-column: span 5 / span 5;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div8 {
+    grid-column: span 5 / span 5;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    background-color: #12131a;
+}
+   .listSpan{
+    display:flex;
+    gap:50px;
+   }     
+   .listSpan span{
+    cursor: pointer;
+   }
   .gridItemFooter {
     grid-area: footer;
     background-color: #12131a;
