@@ -17,7 +17,6 @@
   }
   .gridItemContent{
     grid-area: content1;
-    background-color: blue;
   }
   .gridVerBoxes{
     display: grid;
@@ -139,7 +138,6 @@
     object-fit: cover; 
 }
   .vBox2{
-    background-color: yellow;
   }
   
 .parent2 {
@@ -153,7 +151,6 @@
     
 .div7 {
     grid-column: span 5 / span 5;
-    background-color: aqua;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -172,11 +169,58 @@
    .listSpan span{
     cursor: pointer;
    }
+   .container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+   }
+   .content_box{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   }
+   .card{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .card p{
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+   }
+   .action_btns{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+   }
+   .action_btns button{
+    font-size: 15px;
+    font-weight: 500;
+    color: #002d36;
+    background-color: #99c6cf;
+    border-radius: 6px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5 ease;
+   }
+   .action_btns button:hover{
+    color: #ffffff;
+    background-color: #002d36;
+   }
   .gridItemFooter {
     grid-area: footer;
     background-color: #12131a;
   }
-  
 
   /* Responsive visibility */
   #desktop {

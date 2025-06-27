@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState }  from "react";
 import styles from "../styles/shop.module.css";
 import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
 import img1 from "../assets/img/shop/wmremove-transformed.jpeg";
+import {TapList, TapText} from "../hooks/shop_hook";
 
 
 function Shop(){
@@ -55,14 +56,11 @@ function Shop(){
                     <div className={styles.parent2}>
                             <div className={styles.div7}>
                                 <span style={{fontWeight:"bold",textDecorationLine:"underline",textUnderlineOffset:"7px"}}>Shop by Category</span>
-                                <div className={styles.listSpan}>
-                                    <span>List1</span>
-                                    <span>List2</span>
-                                    <span>List3</span>
-                                    <span>List4</span>
-                                </div>
+                                <TapText></TapText>
                             </div>
-                        <div className={styles.div8}>8</div>
+                        <div className={styles.div8}>
+                            <TapList></TapList>
+                        </div>
                     </div>    
                 </div>
             </div>
