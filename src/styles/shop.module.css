@@ -160,7 +160,6 @@
     grid-column: span 5 / span 5;
     grid-row: span 4 / span 4;
     grid-row-start: 2;
-    background-color: #12131a;
 }
    .listSpan{
     display:flex;
@@ -177,32 +176,39 @@
     align-items: center;
     justify-content: center;
     background-color: #eeeeee;
-   }
+}
+
    .content_box{
-    width: 1000px;
+    width: max-content;
     display: flex;
     align-items: center;
     gap: 20px;
    }
    .card{
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
    }
    .card p{
     font-size: 70px;
     font-weight: 600;
     color: #ffffff;
    }
-   .action_btns{
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    margin-top: 50px;
+   .rightButton{
+    position: relative;
+    right: 48dvw;
+    top:150px;
    }
-   .action_btns button{
+   .leftButton{
+    position: relative;
+    left: 48dvw;
+    top:150px;
+   }
+   .button{
     font-size: 15px;
     font-weight: 500;
     color: #002d36;
@@ -213,7 +219,7 @@
     cursor: pointer;
     transition: all 0.5 ease;
    }
-   .action_btns button:hover{
+   .button:hover{
     color: #ffffff;
     background-color: #002d36;
    }

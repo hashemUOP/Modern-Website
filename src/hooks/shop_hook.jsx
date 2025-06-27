@@ -36,7 +36,14 @@ function TapText() {
 function TapList() {
 
     const ITEM_WIDTH = 200;
-
+    const data = [
+        {id:"Room",},
+        {id:"Style"},
+        {id:"Season"},
+        {id:"Furniture Type"},
+        {id:"Theme"},
+        {id:"Launch or Trend"},
+    ];
     const SAMPLE_DATA=[
     {id:"01",color:"#014f5e"},
     {id:"02",color:"#014f5e"},
@@ -45,7 +52,9 @@ function TapList() {
     {id:"05",color:"#014f5e"},
     {id:"06",color:"#014f5e"},
     ];
-    const [scrollPosition,setScrollPosition] = useState(0);
+
+    const [show, setShow] = useState(false);
+
     const containerRef = useRef();
 
     //function to handle scrolling when the button is clicked
@@ -60,10 +69,12 @@ function TapList() {
     return(
         <div className={styles.Container}>
             <div ref={containerRef} style={{
-                width:"900px",
+                width:"99vw",
                 overflowX:"scroll",
                 scrollBehavior:"smooth",
-
+                justifySelf:"center",
+                scrollbarWidth:"none",
+                position:"absolute"
             }}>
                 <div className={styles.content_box}>
                     {SAMPLE_DATA.map((item) => (
@@ -73,10 +84,9 @@ function TapList() {
                     ))}
                 </div>
             </div>
-            <div className={styles.action_btns}>
-                <button onClick={()=>{handleScroll(ITEM_WIDTH)}}><FaChevronRight /></button>
-                <button onClick={()=>{handleScroll(-ITEM_WIDTH)}}><FaChevronLeft /></button>
-            </div>
+            <button onClick={()=>{handleScroll(ITEM_WIDTH); setShow(true)}} className={`${styles.leftButton} ${styles.button}`}><FaChevronRight /></button>
+            {show && <button onClick={()=>{handleScroll(-ITEM_WIDTH)}} className={`${styles.rightButton} ${styles.button}`}><FaChevronLeft /></button>}
+            
         </div>
     );
 }

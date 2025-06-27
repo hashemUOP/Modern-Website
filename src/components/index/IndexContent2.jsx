@@ -13,7 +13,7 @@ function IndexContent2(){
                 <p>Sign Up for the <strong>NEWSLETTER</strong></p>
                 <form className={styles.formButtonRow}>
                     <input className={styles.input} type="email" placeholder="Enter Your Email"/>
-                    <button onClick={() => redirect('#')} style={{ cursor: "pointer" }}>
+                    <button onClick={() => redirect('#')} style={{ cursor: "pointer",height:"44px"}} >
                         <i className="fa fa-envelope"></i> Subscribe
                     </button>
                 </form>
