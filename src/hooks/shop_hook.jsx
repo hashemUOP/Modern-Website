@@ -1,7 +1,8 @@
-import React ,{useState,useRef} from "react";
+import React ,{useState,useRef,useLayoutEffect} from "react";
 import DATA from "../hooks/category_data";
 import styles from "../styles/shop.module.css";
 import { FaChevronLeft,FaChevronRight } from "react-icons/fa";
+
 
 export default function CategoryTabs(){
   let data = DATA;
@@ -11,12 +12,17 @@ export default function CategoryTabs(){
   const ITEM_WIDTH = 200;
   const [scrollPosition, setScrollPosition] = useState(0);
   const containerRef = useRef();
-  // function to handle scrolling when the button is clicked 
-  const handleScroll = (scrollOffset) => {
-  if (containerRef.current) {
-    containerRef.current.scrollBy({ left: scrollOffset, behavior: "smooth" });
-  }
-};
+
+  // reset scroll *before* paint on tab switch
+  useLayoutEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft = 0;
+    }
+  }, [choosenCat]);
+
+  const handleScroll = (offset) => {
+    containerRef.current?.scrollBy({ left: offset, behavior: "smooth" });
+  };
 
   return(
     <div className={styles.parent2}>
@@ -25,7 +31,7 @@ export default function CategoryTabs(){
         <div className={styles.listSpan}>
           <span className={choosenCat ==="Room"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Room")}>Room</span>
           <span className={choosenCat ==="Style"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Style")}>Style</span>
-          <span className={choosenCat ==="Season"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Season")}>Season</span>
+          <span className={choosenCat ==="Seasons & Holidays"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Seasons & Holidays")}>Seasons & Holidays</span>
           <span className={choosenCat ==="Furniture Type"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Furniture Type")}>Furniture Type</span>
           <span className={choosenCat ==="Theme"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Theme")}>Theme</span>
           <span className={choosenCat ==="Launch or Trend"?styles.choosenText:styles.unchoosenText} onClick={()=>updateCat("Launch or Trend")}>Launch or Trend</span>
@@ -33,9 +39,10 @@ export default function CategoryTabs(){
       </div>
       <div className={styles.box2}>
         <div className={styles.Container}>
-          <div className={styles.scrollWrapper} ref={containerRef}>
+          <div key={choosenCat}  className={styles.scrollWrapper} ref={containerRef}>
             <div className={styles.content_box}>
               {data.find(cat => cat.id === choosenCat)?.subCat.map((item) => (
+                <a href={item.catURL}>
                 <div
                   className={styles.card}
                   style={{ backgroundImage: `url(${item.catImg})` }}
@@ -43,6 +50,7 @@ export default function CategoryTabs(){
                 >
                   <p>{item.catID}</p>
                 </div>
+                </a>
               ))}
             </div>
 
