@@ -3,7 +3,7 @@ import styles from "../styles/shop.module.css";
 import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
 import img1 from "../assets/img/shop/wmremove-transformed.jpeg";
-import {TapList, TapText} from "../hooks/shop_hook";
+import CategoryTabs from "../hooks/shop_hook";
 
 
 function Shop(){
@@ -53,15 +53,7 @@ function Shop(){
                     </div>
                 </div>
                 <div className={styles.vBox2}>
-                    <div className={styles.parent2}>
-                            <div className={styles.div7}>
-                                <span style={{fontWeight:"bold",textDecorationLine:"underline",textUnderlineOffset:"7px"}}>Shop by Category</span>
-                                <TapText></TapText>
-                            </div>
-                        <div className={styles.div8}>
-                            <TapList></TapList>
-                        </div>
-                    </div>    
+                    <CategoryTabs/>
                 </div>
             </div>
           </div>

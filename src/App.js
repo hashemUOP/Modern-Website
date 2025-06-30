@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/check-out" element={<CheckOut/>}/>
         <Route path="/payment" element={<Payment/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/shop" element={<Shop/>}/>
+        <Route path="/shop" element={<Shop/>}/> 
 
          {/* direct-all non existant routes for 404 */}
          <Route path="*" element={<Page404 />} />
