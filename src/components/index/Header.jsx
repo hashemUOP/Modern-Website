@@ -149,9 +149,9 @@ function Header(){
                     <Link to={"/login"}>
                         <button className={styles.loginButton}>Login</button>    
                     </Link>
-                    <a href="#">
+                    <Link to={"/signup"}>
                         <button className={styles.signupButton}>Sign up</button>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={styles.flexHeaderItem2}>
