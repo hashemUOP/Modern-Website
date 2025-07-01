@@ -1,5 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import img1 from "../../assets/img/kam-idris-_HqHX3LBN18-unsplash.jpg";
+import img2 from "../../assets/img/index/DeWatermark.ai_1751364032773.jpeg";
+import img3 from "../../assets/img/index/DeWatermark.ai_1751364051224.jpeg";
+import img4 from "../../assets/img/index/wmremove-transformed.jpeg";
 import mobileImg from "../../assets/img/istockphoto-1353370305-612x612.webp";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from "../../styles/index.module.css";
@@ -9,14 +12,23 @@ function redirect(ref) {
   window.location.href = ref;
 }
 
+
+const imgs=[
+  img1,
+  img2,
+  img3,
+  img4
+];
 function IndexImages() {
+  //counter for image 
+  let [count,setCount] = useState(0);
   return (
     <div style={{height:"100%"}}>
       <div className={styles.imgsContainer}>
-        <img src={img1} className={styles.backgroundImg} alt="Kam-idris Art" />
+        <img src={imgs[count]} className={styles.backgroundImg} alt="Kam-idris Art" />
 
         <div className={styles.overlay}>
-          <button className={styles.arrow}>
+          <button className={styles.arrow} onClick={() => setCount(count === 0 ? 3 : count - 1)}>
           <FaArrowLeft />
           </button>
 
@@ -35,8 +47,7 @@ function IndexImages() {
               </button>
             </div>
           </div>
-
-          <button className={styles.arrow}>
+          <button className={styles.arrow} onClick={() => setCount(count === 3 ? 0 : count + 1)}>
             <FaArrowRight />
           </button>
         </div>
