@@ -351,9 +351,12 @@
   font-weight: 300;
   margin-bottom: 30px;
   color: #2C3930;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); 
-
+  background: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
+
 
 .buttons {
   display: flex;
@@ -462,7 +465,7 @@
   bottom: 15%;
   font-size: 0.9rem;
 }
-.arrowButton {
+.arrowButtonRight {
   background-color: black;
   border: white;
   font-size: 2em;
@@ -479,6 +482,30 @@
   position: sticky;
   top: 45%;
   right: 20px;
+}
+.arrowButtonLeft {
+  background-color: black;
+  border: white;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 100%;
+  text-align: center;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 45%;
+  left: 30px;
+}
+.arrowButtonLeft,
+.arrowButtonRight {
+  position: sticky;
+  top: 45%;
+  z-index: 10;    
 }
 /*  *********  */
 

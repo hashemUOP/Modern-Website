@@ -7,7 +7,7 @@ import cardImage4 from "../../assets/img/image119096.jpg";
 import cardImage5 from "../../assets/img/french-linen-olive-green-hero_14.jpg";
 import cardImage6 from "../../assets/img/81dfKK-q0AL.jpg";
 import styles from "../../styles/index.module.css";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
 
 
 const cardsInfo = [
@@ -25,11 +25,23 @@ function scrollRight() {
         behavior: "smooth"
     });
 }
+function scrollLeft() {
+  document
+    .getElementById("scrollContainer")
+    .scrollBy({
+      left: -200,      // scroll 200px to the left
+      behavior: "smooth"
+    });
+}
+
 
 function IndexCards() {
     return (
         <div style={{height:"100%"}}>
             <div className={styles.cardsContainer} id="scrollContainer">
+                <button className={styles.arrowButtonLeft} onClick={scrollLeft}>
+                    <FaArrowLeft />
+                </button>
                 {cardsInfo.map((card, index) => (
                     index === 0 ?
                     <div className={styles.card} style={{ marginLeft: "25px" }} key={index}>
@@ -44,7 +56,7 @@ function IndexCards() {
                         <p className={styles.cardTextBottom}>{card.text2}</p>
                     </div>
                 ))}
-                <button className={styles.arrowButton} onClick={scrollRight}>
+                <button className={styles.arrowButtonRight} onClick={scrollRight}>
                     <FaArrowRight />
                 </button>
             </div>

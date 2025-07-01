@@ -7,12 +7,7 @@ import mobileImg from "../../assets/img/istockphoto-1353370305-612x612.webp";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from "../../styles/index.module.css";
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
-import { Link,useNavigate} from "react-router-dom";
-
-
-function redirect(ref) {
-  window.location.href = ref;
-}
+import { Link} from "react-router-dom";
 
 
 const imgs=[
@@ -27,7 +22,7 @@ function IndexImages() {
   return (
     <div style={{height:"100%"}}>
       <div className={styles.imgsContainer}>
-        <img src={imgs[count]} className={styles.backgroundImg} alt="Kam-idris Art" />
+        <img src={imgs[count]} className={styles.backgroundImg} alt="Art" />
 
         <div className={styles.overlay}>
           <button className={styles.arrow} onClick={() => setCount(count === 0 ? 3 : count - 1)}>
@@ -47,7 +42,7 @@ function IndexImages() {
                 </button>
               </Link>
               <Link to="/collections" style={{all:"unset"}}>
-                <button className={styles.buttonView} onClick={() => redirect('#')}>
+                <button className={styles.buttonView}>
                   View All
                 </button> 
               </Link>
