@@ -11,10 +11,10 @@ import { Link} from "react-router-dom";
 
 
 const imgs=[
-  img1,
-  img2,
+  img4,
   img3,
-  img4
+  img2,
+  img1,
 ];
 function IndexImages() {
   //counter for image 
