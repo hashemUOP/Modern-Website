@@ -1,8 +1,8 @@
 import React,{useState} from "react";
 import img1 from "../../assets/img/kam-idris-_HqHX3LBN18-unsplash.jpg";
-import img2 from "../../assets/img/index/DeWatermark.ai_1751364032773.jpeg";
-import img3 from "../../assets/img/index/DeWatermark.ai_1751364051224.jpeg";
-import img4 from "../../assets/img/index/wmremove-transformed.jpeg";
+import img2 from "../../assets/img/index/becca-tapert-dO3qTKxwik0-unsplash.jpg";
+import img3 from "../../assets/img/index/michael-oxendine-GHCVUtBECuY-unsplash.jpg";
+import img4 from "../../assets/img/index/spacejoy-sh6Aj176NAQ-unsplash (1).jpg";
 import mobileImg from "../../assets/img/istockphoto-1353370305-612x612.webp";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from "../../styles/index.module.css";
