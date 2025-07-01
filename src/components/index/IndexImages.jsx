@@ -7,6 +7,8 @@ import mobileImg from "../../assets/img/istockphoto-1353370305-612x612.webp";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from "../../styles/index.module.css";
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
+import { Link,useNavigate} from "react-router-dom";
+
 
 function redirect(ref) {
   window.location.href = ref;
@@ -39,12 +41,16 @@ function IndexImages() {
             </div>
 
             <div className={styles.buttons}>
-              <button className={styles.buttonShop} onClick={() => redirect('#')}>
-                Shop Now
-              </button>
-              <button className={styles.buttonView} onClick={() => redirect('#')}>
-                View All
-              </button>
+              <Link to="/shop" style={{all:"unset"}}>
+                <button className={styles.buttonShop}>
+                  Shop Now
+                </button>
+              </Link>
+              <Link to="/collections" style={{all:"unset"}}>
+                <button className={styles.buttonView} onClick={() => redirect('#')}>
+                  View All
+                </button> 
+              </Link>
             </div>
           </div>
           <button className={styles.arrow} onClick={() => setCount(count === 3 ? 0 : count + 1)}>

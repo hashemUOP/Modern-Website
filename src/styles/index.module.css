@@ -351,6 +351,8 @@
   font-weight: 300;
   margin-bottom: 30px;
   color: #2C3930;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); 
+
 }
 
 .buttons {
