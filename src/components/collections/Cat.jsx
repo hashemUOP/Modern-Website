@@ -13,6 +13,10 @@ export default function Cat() {
                 </div>
                 <span style={{marginLeft:"2%",fontWeight:"bold"}}>Category</span>
                 <span style={{marginLeft:"auto",fontSize:"85%"}}>
+                    Filter
+                    <img src={arrowDown} style={{width:"15px"}} />
+                </span>
+                <span style={{marginLeft:"2%",fontSize:"85%"}}>
                     Sort by
                     <img src={arrowDown} style={{width:"15px"}} />
                 </span>

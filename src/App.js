@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Shop from "./pages/shop";
 import Signup from "./pages/Signup";
 import FindStore from "./pages/FindStore";
+import AboutUs from "./pages/AboutUs";
 const App = () => {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/shop" element={<Shop/>}/> 
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/findstore" element={<FindStore/>}/>
+        <Route path="/about-us" element={<AboutUs/>}/>
          {/* direct-all non existant routes for 404 */}
          <Route path="*" element={<Page404 />} />
       </Routes>

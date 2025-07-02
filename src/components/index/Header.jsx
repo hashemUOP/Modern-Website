@@ -38,7 +38,9 @@ function Header(){
                             </Link>
                             <img src={arrowDown} width="15px"/>
                             <ul className={styles.dropDown}>
-                                <li>About us</li>
+                                <Link to="/about-us" style={{all:"unset"}}>
+                                    <li>About us</li>
+                                </Link>
                                 <Link to="/contact" style={{all:"unset"}}>
                                     <li>Contact</li>
                                 </Link>

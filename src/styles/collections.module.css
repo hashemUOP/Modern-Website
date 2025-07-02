@@ -59,7 +59,7 @@
 
 /* ******** **Card** ********  */
 .cardContainer{
-    height: 90%;
+    height: 450px;
     width: calc(100%/3.5);
     display: flex;
     flex-direction: column;
