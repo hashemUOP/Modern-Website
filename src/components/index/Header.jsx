@@ -163,7 +163,9 @@ function Header(){
                 <div className={styles.headerItem2Row2}>
                     <span><a href="#">Deal</a></span>
                     <span>.</span>
-                    <span><a href="#">Find Store</a></span>
+                    <Link to={"/findstore"}>
+                        <span style={{color:"black"}}>Find Store</span>    
+                    </Link>
                     <span>.</span>
                     <span><a href="#">Upcoming Events</a></span>
                     <span>.</span>

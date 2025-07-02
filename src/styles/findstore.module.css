@@ -1,0 +1,127 @@
+.collectionsGridContainer {
+    display: grid;
+    min-height: 100dvh;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90px 850px 50px 370px;
+    grid-template-areas: 
+        "header"
+        "path"
+        "content"
+        "space"
+        "footer";
+}
+.gridItemSpace{
+    grid-area: space;
+}
+.gridItemHeader {
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+}
+
+/* ********  Path  ********* */
+
+.gridItemPath {
+    grid-area: path;
+    display: flex;
+    justify-content: left;
+}
+.gridItemPath span{
+    margin-top: 20px;
+    font-size: 1.05dvw;
+}
+#span1{
+    margin-left: 4%;
+    cursor: pointer;
+}
+#span2{
+    margin-left: 0.5%;
+}
+#span3{
+    margin-left: 0.5%;
+    cursor: pointer;
+    color:#adadad;
+}
+
+/* ******** ****** ********* */
+
+/* ******** Content ********* */
+.gridItemContent {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+}
+.contentBox1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.box1Menu{
+    margin-top: 10px;
+    width: 50%;
+    height: 70%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.contentBox2{
+    grid-row: 2/3;
+    grid-column:1/2 ;
+}
+.box2Content{
+    justify-self: center;
+    width: 75dvw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.box2Left{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #12131a;
+}
+.box2Right{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: white;
+}
+/* ******** ****** ********* */
+
+
+/* ******** Footer ********* */
+.gridItemFooter {
+    grid-area: footer;
+    background-color: #12131a;
+}
+.gridItemFooter hr {
+    width: 85%; 
+    border: 1px solid #505159;
+    margin-bottom: 20px;
+    margin-left: 8%;
+  }
+/* ******** ****** ********* */
+
+#desktop {
+    display: block; /* Show the desktop version */
+}
+
+#mobile {
+    display: none; /* Hide the mobile version */
+}
+
+/* Special response code for header */
+@media (max-width: 1068px) and (min-width: 783px) {
+    /* Add responsive styles here if needed */
+}
+
+/* Mobile CSS code */
+@media (max-width: 783px) {
+    #desktop {
+        display: none; /* Hide the desktop version */
+    }
+    #mobile {
+        display: block; /* Show the mobile version */
+    }
+}
