@@ -43,25 +43,25 @@ function FindStore(){
                   <div className={styles.box2Left}>
                     <div className={styles.boxL1}>
                       <FaLocationDot style={{fontSize:"3dvw"}}/>
-                      <p style={{fontWeight:"900",fontSize:"1.5dvw"}}>Address :</p>
+                      <p style={{fontWeight:"900",fontSize:"1.25dvw"}}>Address :</p>
                       <p style={{paddingLeft:"50px",paddingRight:"50px",fontSize:"1dvw"}}>Airport Rd.Amman Jordan</p>
                     </div>
                     <div className={styles.boxL2}>
                       <AiOutlineMail style={{fontSize:"3dvw"}}/>
-                      <p style={{fontWeight:"900",fontSize:"1.5dvw"}}>Email :</p>
+                      <p style={{fontWeight:"900",fontSize:"1.25dvw"}}>Email :</p>
                       <p style={{paddingLeft:"50px",paddingRight:"50px",fontSize:"1dvw"}}>urbanden@email.com</p>
                     </div>
                     <div className={styles.boxL3}>
                       <IoCall style={{fontSize:"3dvw"}}/>
-                      <p style={{fontWeight:"900",fontSize:"1.5dvw"}}>Call us:</p>
+                      <p style={{fontWeight:"900",fontSize:"1.25dvw"}}>Call us:</p>
                       <p style={{paddingLeft:"50px",paddingRight:"50px",fontSize:"1dvw"}}>1(234)567-891</p>
                     </div>
                     <div className={styles.boxL4}>
                       <p style={{fontWeight:"900",fontSize:"1dvw",marginTop:"100px"}}>Our Social media accounts:</p>
                       <div style={{display:"flex",gap:"10px",marginBottom:"40px"}}>
-                        <FaFacebook style={{fontSize:"1.75dvw"}}/>
-                        <FaInstagram style={{fontSize:"1.75dvw"}}/>
-                        <FaPinterest style={{fontSize:"1.75dvw"}}/>
+                        <FaFacebook style={{fontSize:"1.75dvw",cursor:"pointer"}}/>
+                        <FaInstagram style={{fontSize:"1.75dvw",cursor:"pointer"}}/>
+                        <FaPinterest style={{fontSize:"1.75dvw",cursor:"pointer"}}/>
                       </div>
                     </div>
                   </div>

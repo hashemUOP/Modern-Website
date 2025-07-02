@@ -4,7 +4,7 @@ import { Header } from "../components/index/Header";
 import Footer from "../components/index/Footer";
 import img1 from "../assets/img/shop/wmremove-transformed.jpeg";
 import CategoryTabs from "../hooks/shop_hook";
-
+import img2 from "../assets/img/shop/100448.jpg";
 
 function Shop(){
   return (
@@ -16,7 +16,7 @@ function Shop(){
           </div>
           <div className={styles.gridItemContent}>
             <div className={styles.gridVerBoxes}>
-                <div className={styles.vBox1}>
+                <div className={styles.vBox1} style={{backgroundImage: `url(${img2})`}}>
                     <p style={{fontWeight:"bold",fontSize:"120%",textDecorationLine:"underline",textUnderlineOffset:"7px",marginTop:"20px"}}>Shop by</p>
                     <div className={styles.parent}>
                         <div className={styles.div1}>

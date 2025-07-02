@@ -42,7 +42,6 @@ function Header(){
                                 <Link to="/contact" style={{all:"unset"}}>
                                     <li>Contact</li>
                                 </Link>
-                                <li>Our Resources</li>
                             </ul>
                         </div>
                     </div>
