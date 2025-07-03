@@ -78,7 +78,7 @@
     padding: 20px;
     border-radius: 8px;
     width: 800px;
-    height: 500px;
+    height: auto;
     max-width: 90%;
     text-align: center;
     display: flex;
@@ -87,16 +87,11 @@
 
 .closeButton {
     margin-top: 20px;
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
     cursor: pointer;
+    font-size: 30px;
+    color:gray;
 }
-.closeButton:hover{
-    background-color: rgba(231, 76, 60, 0.8);
-}
+
 .applyButton {
     margin-top: 20px;
     background-color: black;
