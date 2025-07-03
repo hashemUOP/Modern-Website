@@ -2,6 +2,7 @@ import React from "react";
 import pic from "../../assets/img/81dfKK-q0AL.jpg";
 import styles from "../../styles/collections.module.css";
 import arrowDown from '../../assets/icons/Iconsax/Iconsax/Svg/Category/Arrow/vuesax/outline/arrow-down-1.svg';
+import { IoFilterSharp } from "react-icons/io5";
 
 
 export default function Cat() {
@@ -13,8 +14,10 @@ export default function Cat() {
                 </div>
                 <span style={{marginLeft:"2%",fontWeight:"bold"}}>Category</span>
                 <span style={{marginLeft:"auto",fontSize:"85%"}}>
-                    Filter
-                    <img src={arrowDown} style={{width:"15px"}} />
+                    <button className={styles.filterButton}>
+                        <IoFilterSharp style={{fontSize:"20px",color:"white",marginRight:"7px"}} />    
+                        Filter
+                    </button>
                 </span>
                 <span style={{marginLeft:"2%",fontSize:"85%"}}>
                     Sort by
