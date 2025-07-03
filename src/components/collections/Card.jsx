@@ -51,10 +51,10 @@ export default function Card(){
 
                     </div>
                     <div style={{display:"flex",marginTop:"auto",width:"100%",height:"40px",marginBottom:"10px"}}>
-                        <button style={{width:"80%",border:"none",backgroundColor:"black",borderRadius:"15px",color:"white",marginLeft:"2%",fontSize:"80%"}}>
+                        <button className={styles.AddToCartButton}>
                             Add to cart 
                         </button>
-                        <button style={{width:"40px",backgroundColor:"white",borderRadius:"50%",height:"40px",marginLeft:"5px",marginRight:"10px"}}>
+                        <button className={styles.circleButton}>
                             <IoMdEye size={22}/>
                         </button>
                     </div>
